@@ -129,7 +129,7 @@ body {
 .category-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -137,15 +137,34 @@ body {
 .category-card {
   background: #f9f9f9;
   border-radius: 10px;
+  display: flex;
 }
 
-.category-card button {
+.category_card_div {
+  margin-top: 270px;
+  margin-left: 40px;
+}
+
+.category_text {
+  color: #161C24;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.category_image {
+  width: 100%;
+}
+
+.category_btn {
   padding: 12px 78px;
-  background-color: white;
-  border: 1px solid #454f5b;
+  color: #161C24;
   font-weight: 500;
   font-size: 16px;
-  cursor: pointer;
+  line-height: 26px;
+  border: 1px solid #454F5B;
+  margin-bottom: 40px;
+  margin-top: 16px;
 }
 
 .all-categories {
