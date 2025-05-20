@@ -106,12 +106,7 @@ body {
 }
 .category-card {
   background: #f9f9f9;
-  text-align: center;
-  padding: 20px;
   border-radius: 10px;
-  img {
-    width: 100%;
-  }
 }
 
 .category-card button {
@@ -134,4 +129,60 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+  .bi-house-door-fill {
+    display: none;
+  }
+}
+
+.hero__wrapper {
+  margin-top: 20px;
+}
+
+.span__hero {
+  color: #a5a7a9;
+}
+@media only screen and (max-width: 475px) {
+  .bi-house-door-fill {
+    display: inline;
+  }
+
+  .brnci {
+    display: none;
+  }
+
+  .ici {
+    display: none;
+  }
+}
+
+.hamas {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.hero__top-img {
+  width: 605px;
+}
+
+.right_tepa {
+  display: flex;
+  gap: 10px;
+}
+
+.tepaniki_link {
+  color: blue;
+}
+
+.bii {
+  display: none;
+}
+
+.tepaniki_p {
+  color: #454f5b;
+}
+
+.right__title {
+  color: #161c24;
+  font-size: 24px;
 }
