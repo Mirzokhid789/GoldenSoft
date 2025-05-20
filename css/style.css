@@ -114,6 +114,50 @@ a {
   padding-left: 197px;
 }
 
+.grey-one {
+  color: #454f5b;
+}
+
+.category__home {
+  line-height: 26px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  color: #000000;
+}
+
+.category__items-text {
+  color: #000000;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.num {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.filter__clear {
+  padding: 7px 72px;
+  line-height: 26px;
+  letter-spacing: 0%;
+  vertical-align: middle;
+  border: 1px solid #ADD7FF;
+  background-color: transparent;
+  color: #161C24;
+  margin-top: 39px;
+}
+
+.filter__code {
+  font-size: 14px;
+  line-height: 24px;
+  color: #161C24;
+  border: 1px solid transparent;
+  background-color: transparent;
+}
+
 .hero_title {
   color: #161c24;
   font-weight: 600;
