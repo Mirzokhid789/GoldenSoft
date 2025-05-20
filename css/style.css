@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -79,6 +81,7 @@ a {
 .hero_wrapper {
   display: flex;
   align-items: center;
+<<<<<<< HEAD
   gap: 70px;
 }
 
@@ -162,4 +165,35 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+=======
+}
+
+.sale-box {
+  background-color: #454f5b;
+  height: 44px;
+  display: flex;
+}
+
+.sale-text {
+  color: white;
+  line-height: 26px;
+  font-weight: 500;
+  letter-spacing: 12%;
+  text-align: center;
+  padding-top: 9px;
+  padding-left: 452px;
+}
+
+.sale-link {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: 12%;
+  text-decoration: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: 0%;
+  padding-top: 9px;
+  padding-left: 197px;
+>>>>>>> origin/master
 }/*# sourceMappingURL=style.css.map */
