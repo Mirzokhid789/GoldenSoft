@@ -1,1 +1,139 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.header__list-item {
+  gap: 20px;
+  display: flex;
+}
+
+.list-item__link {
+  color: #161C24;
+}
+
+.header__link {
+  color: gray;
+}
+
+.header__burger {
+  display: none;
+}
+
+.tepa {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.header__list2-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__oxrgisi {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bi-telephone {
+  color: blue;
+}
+
+@media only screen and (max-width: 815px) {
+  .header__link {
+    display: none;
+  }
+}
+@media only screen and (max-width: 648px) {
+  .header__list {
+    display: none;
+  }
+}
+@media only screen and (max-width: 400px) {
+  .header__burger {
+    display: inline;
+  }
+  .header__logo {
+    display: none;
+  }
+}
+.bi-house-door-fill {
+  display: none;
+}
+
+.hero__wrapper {
+  margin-top: 20px;
+}
+
+.span__hero {
+  color: #a5a7a9;
+}
+
+@media only screen and (max-width: 475px) {
+  .bi-house-door-fill {
+    display: inline;
+  }
+  .brnci {
+    display: none;
+  }
+  .ici {
+    display: none;
+  }
+}
+.hamas {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.hero__top-img {
+  width: 605px;
+}
+
+.right_tepa {
+  display: flex;
+  gap: 10px;
+}
+
+.tepaniki_link {
+  color: blue;
+}
+
+.bii {
+  display: none;
+}
+
+.tepaniki_p {
+  color: #454f5b;
+}
+
+.right__title {
+  color: #161c24;
+  font-size: 24px;
+}/*# sourceMappingURL=style.css.map */
