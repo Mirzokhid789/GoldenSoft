@@ -1,9 +1,68 @@
-.header_wrapper{
-    display: flex;
-    align-items: center;
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  align-items: center;
+  margin-bottom: 20px;
 }
-.header_menu{
-    display: flex;
-    align-items: center;
-    
+
+.header__list-item {
+  gap: 20px;
+  display: flex;
+}
+
+.list-item__link{
+  color: #161C24;
+}
+
+.header__link{
+  color: gray;
+}
+
+.header__burger {
+  display: none;
+}
+
+.tepa {
+  display: flex;
+  gap: 100px;
+  align-items: center;
+}
+
+.header__list2-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__oxrgisi {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.bi-telephone {
+  color: blue;
+}
+
+@media only screen and (max-width: 815px) {
+  .header__link {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  .header__list {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+    .header__burger{
+        display: inline;
+    }
+
+    .header__logo{
+        display: none;
+    }
 }
