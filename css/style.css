@@ -1,9 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.cdnfonts.com/css/sf-pro-display");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "SF Pro Display", sans-serif;
 }
 
 ul {
@@ -112,6 +115,7 @@ a {
   text-decoration-thickness: 0%;
   padding-top: 9px;
   padding-left: 197px;
+<<<<<<< HEAD
 }
 
 .grey-one {
@@ -156,6 +160,8 @@ a {
   color: #161C24;
   border: 1px solid transparent;
   background-color: transparent;
+=======
+>>>>>>> origin/yusuf
 }
 
 .hero_title {
@@ -177,7 +183,7 @@ a {
 }
 
 .hero {
-  margin-left: 160px;
+  margin-left: 150px;
 }
 
 .hero_text2 {
@@ -186,6 +192,11 @@ a {
   font-size: 14px;
   max-width: 287px;
   margin-bottom: 32px;
+}
+
+.arrows_wr {
+  text-align: center;
+  margin-top: 40px;
 }
 
 .text {
@@ -222,14 +233,6 @@ a {
   gap: 70px;
 }
 
-body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #fff;
-  color: #222;
-}
-
 .gift_h2 {
   color: #161c24;
   font-weight: 600;
@@ -260,6 +263,57 @@ body {
   margin-bottom: 10px;
 }
 
+.hero__wrapper {
+  margin-top: 20px;
+}
+
+.span__hero {
+  color: #a5a7a9;
+}
+
+@media only screen and (max-width: 475px) {
+  .bi-house-door-fill {
+    display: inline;
+  }
+  .brnci {
+    display: none;
+  }
+  .ici {
+    display: none;
+  }
+}
+.hamas {
+  margin-top: 40px;
+  display: flex;
+  gap: 30px;
+}
+
+.hero__top-img {
+  width: 605px;
+}
+
+.right_tepa {
+  display: flex;
+  gap: 10px;
+}
+
+.tepaniki_link {
+  color: blue;
+}
+
+.bii {
+  display: none;
+}
+
+.tepaniki_p {
+  color: #454f5b;
+}
+
+.right__title {
+  color: #161c24;
+  font-size: 24px;
+}
+
 .categories {
   padding: 40px 20px;
 }
@@ -267,30 +321,47 @@ body {
 .category-grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(200px, 1fr));
-  gap: 10px;
+  gap: 40px;
   max-width: 1000px;
   margin: 0 auto;
 }
 
 .category-card {
   background: #f9f9f9;
-  text-align: center;
-  padding: 20px;
   border-radius: 10px;
+<<<<<<< HEAD
   background: #f9f9f9;
   border-radius: 10px;
+=======
+  display: flex;
+>>>>>>> origin/yusuf
 }
-.category-card img {
+
+.category_card_div {
+  margin-top: 270px;
+  margin-left: 40px;
+}
+
+.category_text {
+  color: #161c24;
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 34px;
+}
+
+.category_image {
   width: 100%;
 }
 
-.category-card button {
+.category_btn {
   padding: 12px 78px;
-  background-color: white;
-  border: 1px solid #454f5b;
+  color: #161c24;
   font-weight: 500;
   font-size: 16px;
-  cursor: pointer;
+  line-height: 26px;
+  border: 1px solid #454f5b;
+  margin-bottom: 40px;
+  margin-top: 16px;
 }
 
 .all-categories {
@@ -304,15 +375,19 @@ body {
   border: none;
   color: white;
   cursor: pointer;
+<<<<<<< HEAD
   padding: 12px 57px;
   background-color: #007bff;
   border: none;
   color: white;
+=======
+>>>>>>> origin/yusuf
 }
 .all-categories button .bi-house-door-fill {
   display: none;
 }
 
+<<<<<<< HEAD
 .hero__wrapper {
   margin-top: 20px;
 }
@@ -594,4 +669,67 @@ body {
   padding-top: 9px;
   padding-left: 197px;
 >>>>>>> origin/sarafroz
+=======
+.collobrates {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  gap: 82px;
+  background-color: #f2f8ff;
+  justify-content: center;
+  padding: 40px 0px 40px;
+}
+
+.collobrates_text {
+  color: #161c24;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 18px;
+}
+
+.collobrates_text2 {
+  color: #454f5b;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.product_section {
+  margin-left: 100px;
+}
+
+.product_h3 {
+  color: #161c24;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  margin-bottom: 65px;
+}
+
+.product_zamok {
+  color: #454f5b;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 264px;
+  margin-left: 12px;
+}
+
+.products_second-text {
+  color: #161c24;
+  font-weight: 600;
+  font-size: 20px;
+  margin-left: 12px;
+}
+
+.product_child {
+  box-shadow: -1px 0px 0px 0px #eaeaea inset;
+  box-shadow: 1px 0px 0px 0px #eaeaea inset;
+  box-shadow: 0px -1px 0px 0px #eaeaea inset;
+  border: 1px solid red;
+  width: 290px;
+>>>>>>> origin/yusuf
 }/*# sourceMappingURL=style.css.map */
