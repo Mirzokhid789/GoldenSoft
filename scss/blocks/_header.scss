@@ -11,11 +11,11 @@
   display: flex;
 }
 
-.list-item__link{
-  color: #161C24;
+.list-item__link {
+  color: #161c24;
 }
 
-.header__link{
+.header__link {
   color: gray;
 }
 
@@ -58,11 +58,11 @@
 }
 
 @media only screen and (max-width: 400px) {
-    .header__burger{
-        display: inline;
-    }
+  .header__burger {
+    display: inline;
+  }
 
-    .header__logo{
-        display: none;
-    }
+  .header__logo {
+    display: none;
+  }
 }
