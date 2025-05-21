@@ -11,11 +11,11 @@
 	letter-spacing: 12%;
 	text-align: center;
 	padding-top: 9px;
-    padding-left: 452px;
+	padding-left: 452px;
 }
 
 .sale-link {
-    color: $white-color;
+	color: $white-color;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 26px;
@@ -23,6 +23,52 @@
 	text-decoration: underline;
 	text-decoration-style: solid;
 	text-decoration-thickness: 0%;
-    padding-top: 9px;
-    padding-left: 197px;
+	padding-top: 9px;
+	padding-left: 197px;
 }
+
+.grey-one {
+	color: $grey;
+}
+
+.category__home {
+	line-height: 26px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+	color: $black;
+}
+
+.category__items-text {
+	color: $black;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 42px;
+}
+
+.num {
+	font-weight: 300;
+	font-size: 18px;
+	line-height: 28px;
+	color: $black;
+}
+
+.filter__clear {
+	padding: 7px 72px;
+	line-height: 26px;
+	letter-spacing: 0%;
+	vertical-align: middle;
+	border: 1px solid #ADD7FF;
+	background-color: transparent;
+	color: #161C24;
+	margin-top: 39px;
+}
+
+.filter__code{
+	font-size: 14px;
+	line-height: 24px;
+	color: #161C24;
+	border: 1px solid transparent;
+	background-color: transparent;
+}
+
+

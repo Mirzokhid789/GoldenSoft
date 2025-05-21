@@ -14,31 +14,34 @@
     <main>
       <section class="hero">
         <div class="container">
-          <div class="hero_wrapper">
-            <div class="hero_left">
+          <div class="product-container">
+            <div class="product-image">
               <img
                 src="./assets/Rectangle 6.svg"
-                alt="Rectangle"
-                class="hero_img"
+                alt="Golden Soft GS-200Z-5 электронный замок"
               />
             </div>
-            <div class="hero_right">
-              <h2 class="hero_title">Golden Soft GS-200Z-5 для офиса</h2>
-              <p class="hero_text1">
+
+            <div class="product-info">
+              <h1 class="product-title">Golden Soft</h1>
+              <h2 class="product-subtitle">GS-200Z-5 для офиса</h2>
+
+              <p class="product-second-p">
                 Замок дверной электронный Golden Soft GS-200Z-5 имеет роскошный
                 глянцевый блеск, четкие линии, красивые формы.
               </p>
-              <p class="hero_text2">
+
+              <p class="product-second-p">
                 Подходит для установки на деревянную/межкомнатную дверь.
               </p>
-              <p class="text">Цена</p>
-              <p class="hero_text3">
-                33 000₽
-                <span style="color: #a4a4a4; text-decoration: line-through"
-                  >37 000₽</span
-                >
-              </p>
-              <button class="hero_btn">Добавить в корзину</button>
+
+              <div class="price-label">Цена</div>
+              <div class="price-container">
+                <div class="current-price">33 000₽</div>
+                <div class="old-price">37 000₽</div>
+              </div>
+
+              <button class="hero_second_btn">Добавить в корзину</button>
             </div>
           </div>
           <div class="arrows_wr">
@@ -49,24 +52,6 @@
 
       <section class="why-us">
         <div class="container">
-          <div class="collobrates">
-            <div class="collobrate_child">
-              <p class="collobrates_text">5,567</p>
-              <p class="collobrates_text2">Счастливых клиентов</p>
-            </div>
-            <div class="collobrate_child">
-              <p class="collobrates_text">1245</p>
-              <p class="collobrates_text2">Продуктов на выбор</p>
-            </div>
-            <div class="collobrate_child">
-              <p class="collobrates_text">372</p>
-              <p class="collobrates_text2">Продаж в день</p>
-            </div>
-            <div class="collobrate_child">
-              <p class="collobrates_text">20</p>
-              <p class="collobrates_text2">Лет на рынке</p>
-            </div>
-          </div>
           <h2 class="gift_h2">Почему GoldenService?</h2>
           <div class="benefits">
             <div class="benefit">
@@ -89,22 +74,44 @@
         </div>
       </section>
 
-      <section class="categories">
+      <section>
         <div class="container">
-          <h2 class="gift_h2">Категории</h2>
-          <div class="category-grid">
-            <div class="category-card">
-              <div class="category_card_div">
-                <p class="category_text">Для отелей</p>
-                <button class="category_btn">Перейти</button>
-              </div>
-              <div class="category_div">
+          <p class="categoriy_text">Категории</p>
+
+          <div class="categories">
+            <div class="card">
+              <div class="image">
                 <img
-                  class="category_image"
                   src="./assets/фото.svg"
-                  alt="Для отелей"
+                  alt="Электронный замок для отелей"
                 />
               </div>
+              <p class="categoriy_text2">Для отелей</p>
+              <button href="#" class="btn">Перейти</button>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <img src="./assets/lock 2.svg" alt="Замок для шкафчиков" />
+              </div>
+              <p class="categoriy_text2">Для шкафчиков</p>
+              <button href="#" class="btn">Перейти</button>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <img src="./assets/lock 3.svg" alt="Замок для офисов" />
+              </div>
+              <p class="categoriy_text2">Для офисов</p>
+              <a href="#" class="btn">Перейти</a>
+            </div>
+
+            <div class="card">
+              <div class="image">
+                <img src="./assets/lock 4.svg" alt="Замки для дома" />
+              </div>
+              <p class="categoriy_text2">Замки для дома</p>
+              <button href="#" class="btn">Перейти</button>
             </div>
           </div>
         </div>
@@ -116,24 +123,115 @@
           <div class="products_wrapper">
             <div class="product_child">
               <div class="products_image">
+                <span class="agree">
+                  <img src="./assets/В наличии.svg" alt="" />
+                  <img src="./assets/gift2.svg" alt="" />
+                </span>
+                <img src="./assets/sale.svg" alt="" class="sale" />
                 <img
                   src="./assets/Rectangle 19.svg"
                   alt="Rectangle"
                   class="product_pic"
                 />
               </div>
-              <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
-              <p class="products_second-text">
-                33 000₽
-                <span
-                  style="
-                    color: #454f5b;
-                    font-weight: 300;
-                    text-decoration: line-through;
-                  "
-                  >37 000₽</span
-                >
-              </p>
+              <div class="products__bottom">
+                <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
+                <p class="products_second-text">
+                  33 000₽
+                  <span
+                    style="
+                      color: #454f5b;
+                      font-weight: 300;
+                      text-decoration: line-through;
+                    "
+                    >37 000₽</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="product_child">
+              <div class="products_image">
+                <span class="agree">
+                  <img src="./assets/В наличии.svg" alt="" />
+                  <img src="./assets/gift2.svg" alt="" />
+                </span>
+                <img src="./assets/sale.svg" alt="" class="sale" />
+                <img
+                  src="./assets/Rectangle 19.svg"
+                  alt="Rectangle"
+                  class="product_pic"
+                />
+              </div>
+              <div class="products__bottom">
+                <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
+                <p class="products_second-text">
+                  33 000₽
+                  <span
+                    style="
+                      color: #454f5b;
+                      font-weight: 300;
+                      text-decoration: line-through;
+                    "
+                    >37 000₽</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="product_child">
+              <div class="products_image">
+                <span class="agree">
+                  <img src="./assets/В наличии.svg" alt="" />
+                  <img src="./assets/gift2.svg" alt="" />
+                </span>
+                <img src="./assets/sale.svg" alt="" class="sale" />
+                <img
+                  src="./assets/Rectangle 19.svg"
+                  alt="Rectangle"
+                  class="product_pic"
+                />
+              </div>
+              <div class="products__bottom">
+                <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
+                <p class="products_second-text">
+                  33 000₽
+                  <span
+                    style="
+                      color: #454f5b;
+                      font-weight: 300;
+                      text-decoration: line-through;
+                    "
+                    >37 000₽</span
+                  >
+                </p>
+              </div>
+            </div>
+            <div class="product_child">
+              <div class="products_image">
+                <span class="agree">
+                  <img src="./assets/В наличии.svg" alt="" />
+                  <img src="./assets/gift2.svg" alt="" />
+                </span>
+                <img src="./assets/sale.svg" alt="" class="sale" />
+                <img
+                  src="./assets/Rectangle 19.svg"
+                  alt="Rectangle"
+                  class="product_pic"
+                />
+              </div>
+              <div class="products__bottom">
+                <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
+                <p class="products_second-text">
+                  33 000₽
+                  <span
+                    style="
+                      color: #454f5b;
+                      font-weight: 300;
+                      text-decoration: line-through;
+                    "
+                    >37 000₽</span
+                  >
+                </p>
+              </div>
             </div>
           </div>
         </div>
