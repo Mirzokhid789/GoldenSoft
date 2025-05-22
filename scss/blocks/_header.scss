@@ -9,6 +9,7 @@
 .header__list-item {
   gap: 20px;
   display: flex;
+
 }
 
 .list-item__link {
@@ -23,10 +24,42 @@
   display: none;
 }
 
+.header__burger--list {
+  display: none;
+}
+
+.ul-li_title{
+  color: #454F5B;
+}
+.ul-li_titlee{
+  color: #161C24;
+}
+
+.phonega{
+  margin-top: 340px;
+  display: flex;
+  gap: 25px;
+}
+
 .tepa {
   display: flex;
   gap: 100px;
   align-items: center;
+}
+
+.nom__ul-li {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.hrlar {
+  width: 333px;
+}
+
+.ul-li_titlee {
+  display: flex;
+  gap: 220px;
 }
 
 .header__list2-item {
@@ -57,9 +90,22 @@
   }
 }
 
+.active {
+  display: flex;
+  position: absolute;
+}
+
 @media only screen and (max-width: 400px) {
   .header__burger {
     display: inline;
+  }
+
+  .header__burger--list {
+    flex-direction: column;
+    top: 80px;
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
   }
 
   .header__logo {
