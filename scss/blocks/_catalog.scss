@@ -160,10 +160,10 @@
 .filter-border {
 	margin-top: 16px;
 	max-width: 240px;
-	border: 1px solid #ededed;	
+	border: 1px solid #ededed;
 }
 
-#color{
+#color {
 	display: none;
 }
 
@@ -229,9 +229,11 @@
 
 	.product-image {
 		width: 100%;
+		padding: 0;
 	}
 
 	.product-info {
+		width: 100%;
 		padding: 10px;
 		border-left: 1px solid #eaeaea;
 		border-bottom: 1px solid #eaeaea;
@@ -284,22 +286,86 @@
 	cursor: pointer;
 }
 
-// Sidebar normally shown
 .filters {
 	display: block;
 }
 
-// Responsive for 360px and below
+@media (max-width: 920px) {
+	.sale-link {
+		display: none;
+	}
+
+	.sale-text {
+		padding-left: 0;
+	}
+}
+
 @media (max-width: 360px) {
 	.filters {
-		display: none; // Hide sidebar filters
+		display: none;
+	}
+
+	.category__items-text {
+		font-weight: 600;
+		font-size: 16px;
+		line-height: 26px;
+	}
+
+	.filter__code {
+		display: none;
+	}
+	.filter__clear {
+		display: none;
+	}
+
+	.sidebar h3 {
+		display: none;
 	}
 
 	.filter-toggle {
-		display: inline-block; // Show filter button
+		padding: 12px 135px;
+		background-color: #4295e4;
+		margin-top: 24px;
+	}
+	.num {
+		color: $grey;
+		font-weight: 300;
+		line-height: 22px;
 	}
 
+	.sale {
+		top: 20px;
+	}
+	.sale-box {
+		height: 36px;
+	}
+
+	.sale-text {
+		font-weight: 400;
+		font-size: 10px;
+		line-height: 12px;
+	}
+
+	.filter-toggle {
+		display: inline-block;
+	}
+
+	.layout {
+		display: inline-block;
+		width: 343px;
+		padding: 0;
+	}
+
+	.products {
+		display: inline-block;
+		width: 343px;
+	}
+
+	.sidebar {
+		border: 1px solid transparent;
+	}
 	.product-card {
+		display: inline-block;
 		width: 100%;
 		padding: 0.5rem;
 
@@ -314,7 +380,7 @@
 
 			.sale {
 				font-size: 0.75rem;
-				padding: 1px 4px;
+				width: 51px;
 			}
 		}
 
@@ -388,3 +454,52 @@
 	color: #161c24;
 	max-width: 184px;
 }
+
+.see-title {
+	font-weight: 600;
+	font-size: 44px;
+	line-height: 62px;
+	color: #161c24;
+	max-width: 1074px;
+	margin-top: 100px;
+	margin-bottom: 64px;
+}
+
+.last-seen_box {
+	display: flex;
+	gap: 30px;
+}
+
+.new-container {
+	margin-top: 96px;
+}
+
+.first-news_box {
+	display: flex;
+	gap: 30px;
+}
+
+.new1-left {
+	display: flex;
+	flex-direction: column;
+	gap: 24px;
+}
+
+.new1-title {
+	font-weight: 600;
+	font-size: 2rem;
+	line-height: 42px;
+	margin: 81px 0 0 0;
+	color: #161c24;
+	max-width: 605px;
+}
+
+.new1-info {
+	font-size: 18px;
+	line-height: 32px;
+	color: $grey;
+	max-width: 605px;
+}
+
+
+
