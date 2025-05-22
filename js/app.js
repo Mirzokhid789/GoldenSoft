@@ -14,7 +14,7 @@ headerBurger.addEventListener("click", (e) => {
 let kotalog = document.querySelector(".catalog");
 console.log(kotalog);
 
-console.log(window.location);
+console.log(window.location.href);
 
 kotalog.addEventListener("click", () => {
   console.log("click");
