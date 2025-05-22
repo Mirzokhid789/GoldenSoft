@@ -447,12 +447,10 @@ a {
 }
 
 .hero {
-  margin-left: 150px;
   color: #454f5b;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  max-width: 287px;
   margin-bottom: 15px;
 }
 
@@ -958,6 +956,7 @@ a {
   font-size: 32px;
   font-weight: bold;
   color: #1a1a1a;
+  margin-top: 100px;
 }
 
 .categories {
@@ -1034,6 +1033,9 @@ a {
   }
   categoriy_text2,
   .btn {
+    width: 100%;
+  }
+  .wrapper__third_button {
     width: 100%;
   }
 }
@@ -1122,9 +1124,93 @@ a {
   border-left: 1px solid #a5a5a5;
 }
 
+.wrapper__third_button {
+  padding: 12px 57px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #4295e4;
+  margin-top: 50px;
+  border: none;
+  margin-bottom: 100px;
+}
+
+.third_button-a {
+  color: white;
+}
+
+.buttons_second-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @media (max-width: 1150px) {
   .products_wrapper {
     overflow: scroll;
+  }
+}
+.inputs_wrapper {
+  background-color: #f2f8ff;
+  padding-top: 64px;
+  padding-bottom: 56px;
+  margin-top: 100px;
+}
+
+.inputs_wrapper-h1 {
+  color: #161c24;
+  font-weight: 600;
+  font-size: 44px;
+  line-height: 62px;
+  margin-bottom: 24px;
+}
+
+.inputs_wrapper-text {
+  color: #454f5b;
+  font-weight: 400;
+  font-size: 16px;
+  width: 520px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.inputs_child {
+  padding: 12px 0 12px 16px;
+  color: Grey;
+  border: none;
+  outline: 1px solid #eaeaea;
+}
+
+.form-row {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+}
+
+.callback-container {
+  place-items: center;
+}
+
+.form_button {
+  padding: 12px 70px;
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 26px;
+  background-color: #4295e4;
+  border: none;
+}
+
+@media (max-width: 650px) {
+  .form {
+    width: 100%;
+  }
+  .form-row {
+    flex-direction: column;
+    width: 100%;
+  }
+  .inputs_wrapper-text {
+    width: 100%;
   }
 }
 .product-container {
@@ -1355,4 +1441,128 @@ a {
     display: flex;
     flex-direction: column-reverse;
   }
+}
+.footer {
+  background-color: #2c3e50;
+  color: white;
+  padding: 40px 0 20px;
+}
+
+.footer__container {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.footer__section {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer__logo {
+  width: 105px;
+  height: 88px;
+  top: 64px;
+  left: 100px;
+}
+
+.footer__title {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #ecf0f1;
+}
+
+.footer__link {
+  color: #bdc3c7;
+  text-decoration: none;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.footer__link:hover {
+  color: white;
+}
+
+.footer__contact-item {
+  margin-bottom: 10px;
+  color: #bdc3c7;
+}
+
+.footer__social {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.footer__social-link {
+  color: #bdc3c7;
+  text-decoration: none;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.footer__social-link:hover {
+  color: white;
+}
+
+.footer__bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #34495e;
+  color: #bdc3c7;
+  font-size: 14px;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.lock-wrapper-second {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.lock-box {
+  background-color: white;
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.lock-box img {
+  max-width: 100%;
+  height: 160px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  margin-bottom: 12px;
+}
+
+.lock-box .caption {
+  font-size: 14px;
+  color: #333;
+  text-align: center;
+}
+
+.show_all-deganbtn {
+  background-color: #4295E4;
+  color: #fff;
+  border: none;
+  padding: 12px 60px;
+  line-height: 26px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 100px;
 }/*# sourceMappingURL=style.css.map */
