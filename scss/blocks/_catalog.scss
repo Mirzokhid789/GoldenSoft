@@ -477,6 +477,7 @@
 .first-news_box {
 	display: flex;
 	gap: 30px;
+	margin-bottom: 82px;
 }
 
 .new1-left {
@@ -498,8 +499,129 @@
 	font-size: 18px;
 	line-height: 32px;
 	color: $grey;
+	max-width: 520px;
+	font-weight: 400;
+}
+
+.checkmarks {
+	display: flex;
+	width: 440px;
+	gap: 30px;
+
+	label {
+		font-size: 20px;
+		line-height: 24px;
+		vertical-align: middle;
+		color: #161c24;
+	}
+}
+
+.big-check_box {
+	width: 502px;
+}
+
+.new1-big-desc {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	color: $grey;
 	max-width: 605px;
 }
 
+.new1-poster {
+	width: 605px;
+	height: 565px;
+}
 
+.second-news_box {
+	display: flex;
+	gap: 30px;
+}
 
+.right2-box {
+	display: flex;
+	gap: 24px;
+	flex-direction: column;
+}
+
+@media (max-width: 360px) {
+	.see-title {
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 34px;
+	}
+
+	.last-seen_box {
+		overflow-y: scroll;
+		.product-image {
+			width: 288px;
+			height: 320px;
+		}
+	}
+
+	.new1-poster {
+		width: 343px;
+		height: 300px;
+		display: inline-block;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+
+	.first-news_box {
+		display: flex;
+		flex-direction: column-reverse;
+		gap: 16px;
+		width: 100%;
+	}
+
+	.new1-title {
+		font-size: 1rem;
+		font-weight: 600;
+		line-height: 26px;
+		max-width: 343px;
+		margin: 0;
+		padding: 0;
+		width: 100%;
+	}
+	.new1-info {
+		max-width: 343px;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		width: 100%;
+	}
+	.big-check_box {
+		flex-direction: column;
+		gap: 12px;
+		width: 100%;
+	}
+
+	.checkmarks {
+		display: block;
+		width: 100%;
+
+		div {
+			margin-bottom: 12px;
+			width: 100%;
+		}
+
+		.new1-big-desc {
+			max-width: 343px;
+			font-weight: 400;
+			font-size: 14px;
+			line-height: 24px;
+			width: 100%;
+		}
+	}
+
+	.new-poster2 {
+		width: 100%;
+		height: 300px;
+	}
+
+	.second-news_box {
+		flex-direction: column;
+		width: 100%;
+	}
+}
