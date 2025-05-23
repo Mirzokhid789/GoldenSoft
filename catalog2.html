@@ -11,16 +11,40 @@
     />
   </head>
   <body>
-    <header class="header">
+   <header class="header">
       <div class="container">
         <div class="header__wrapper">
+          <div class="header__burger"><i class="bi bi-list" id="menu"></i></div>
+          <div class="header__burger--list">
+            <ul class="nom__ul">
+              <li class="nom__ul-li">
+                <h3 class="ul-li_title">Главная</h3>
+                <hr class="hrlar" />
+                <h3 class="ul-li_titlee">
+                  <a href="./catalog.html"
+                    >Каталог <i class="bi bi-arrow-right"></i
+                  ></a>
+                </h3>
+                <hr class="hrlar" />
+                <h3 class="ul-li_title">Оптовая продажа</h3>
+                <hr class="hrlar" />
+                <h3 class="ul-li_title">О нас</h3>
+                <hr class="hrlar" />
+              </li>
+            </ul>
+            <!-- <div class="phonega">
+              <a href="" class="phonega_phone"
+                ><i class="bi bi-telephone"></i>+7 (966) 55 88 499</a
+              >
+              <a href="" class="phonega_link">Обратный звонок</a>
+            </div> -->
+          </div>
           <div class="tepa">
-            <div class="header__burger"><i class="bi bi-list"></i></div>
             <img src="./assets/Logo.svg" alt="" class="header__logo" />
             <ul class="header__list">
               <li class="header__list-item">
                 <a href="" class="list-item__link">Главная</a>
-                <a href="./pages/catalog.html" class="list-item__link"
+                <a href="/catalog.html" class="list-item__link catalog"
                   >Каталог<i class="bi bi-arrow-down-short"></i
                 ></a>
                 <a href="" class="list-item__link">Оптовая продажа</a>
@@ -152,5 +176,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./js/header.js"></script>
   </body>
 </html>
