@@ -181,6 +181,25 @@
 	flex-grow: 1;
 }
 
+.dropdown-pop {
+	width: 194px;
+	height: 40px;
+}
+
+.dropdown {
+	margin-left: 508px;
+}
+
+.blue-one {
+	color: #4295e4;
+}
+
+.filters-box {
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
 .product-card {
 	position: relative;
 	border: 1px solid transparent;
@@ -211,6 +230,7 @@
 			font-weight: 500;
 			font-size: 12px;
 			box-shadow: 0px 2px 5px 0px #00000008;
+			display: none;
 		}
 	}
 
@@ -225,11 +245,14 @@
 		position: absolute;
 		top: 49px;
 		left: 12px;
+		display: none;
 	}
 
 	.product-image {
 		width: 100%;
 		padding: 0;
+		height: 320px;
+		object-fit: contain;
 	}
 
 	.product-info {
@@ -290,6 +313,67 @@
 	display: block;
 }
 
+.filter-group {
+	max-width: 400px;
+	margin-bottom: 20px;
+}
+
+.filter-title {
+	font-weight: bold;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.price-range-inputs {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 10px;
+}
+
+.price-input {
+	display: flex;
+	align-items: center;
+	border: 1px solid #ccc;
+	padding: 5px 10px;
+	border-radius: 8px;
+	width: 100px;
+	justify-content: space-between;
+}
+
+.slider-container {
+	position: relative;
+	height: 40px;
+}
+
+.slider-container input[type='range'] {
+	position: absolute;
+	width: 100%;
+	height: 8px;
+	appearance: none;
+	background: none;
+	pointer-events: none;
+}
+
+.slider-container input[type='range']::-webkit-slider-thumb {
+	pointer-events: all;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background: #007bff;
+	border: none;
+	appearance: none;
+	margin-top: -6px;
+}
+
+.slider-track {
+	position: absolute;
+	height: 6px;
+	background: #007bff;
+	top: 7px;
+	z-index: 1;
+	border-radius: 3px;
+}
+
 @media (max-width: 920px) {
 	.sale-link {
 		display: none;
@@ -303,6 +387,15 @@
 @media (max-width: 360px) {
 	.filters {
 		display: none;
+	}
+
+	.dropdown {
+		width: 323.75px;
+		text-align: left;
+		padding: 0;
+		height: 40px;
+		margin: 0;
+		border: 1px solid #c4cdd5;
 	}
 
 	.category__items-text {
@@ -468,6 +561,12 @@
 .last-seen_box {
 	display: flex;
 	gap: 30px;
+	overflow-x: scroll;
+	overflow-y: hidden;
+	.product-card {
+		width: 288px;
+		height: 426px;
+	}
 }
 
 .new-container {

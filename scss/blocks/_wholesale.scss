@@ -123,7 +123,7 @@
 @media (max-width: 360px) {
 	.whole1-section {
 		display: block;
-		height: 920px;
+		height: 900px;
 		width: 100%;
 	}
 
@@ -201,6 +201,13 @@
 	.whole1-right {
 		width: 343px;
 		margin-top: 24px;
+		margin-left: 8px;
 	}
 
+	.whole-section1 {
+		.container {
+			padding: 0;
+			margin: 0;
+		}
+	}
 }
