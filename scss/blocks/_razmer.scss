@@ -142,6 +142,7 @@
   display: grid;
   grid-template-columns: 300px 300px 300px 300px;
   gap: 30px;
+  justify-content: space-between;
 }
 .products__bottom {
   border-bottom: 1px solid #a5a5a5;
@@ -149,8 +150,55 @@
   border-left: 1px solid #a5a5a5;
 }
 
-@media (max-width: 1150px) {
+@media only screen and (max-width: 1150px) {
   .products_wrapper {
     overflow: scroll;
   }
 }
+
+@media screen and (max-width: 1230px) {
+  .bi-caret-left-fill{
+    display: none;
+  }
+
+  .bi-caret-right-fill{
+    display: none;
+  }
+
+  .lalala{
+    display: flex;
+    gap: 0px;
+  }
+
+  .ora_product{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 365px) {
+  .box__right-items {
+    display: flex;
+    gap: 50px;
+  }
+
+  .box__left-item {
+    display: flex;
+    gap: 50px;
+  }
+}
+
+.lalala {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.ora_product {
+  display: flex;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+
+

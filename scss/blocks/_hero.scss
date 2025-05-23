@@ -15,12 +15,12 @@
   margin-bottom: 15px;
 }
 .hero {
-	color: #454f5b;
-	font-weight: 400;
-	font-size: 14px;
-	line-height: 24px;
+  color: #454f5b;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 
-	margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 .hero_text2 {
   color: #454f5b;
@@ -529,3 +529,10 @@
     width: 311px;
   }
 }
+
+@media only screen and (max-width: 365px) {
+  .part__subtitle{
+    width: 255px;
+  }
+}
+
