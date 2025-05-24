@@ -60,6 +60,18 @@ a {
   color: #161C24;
 }
 
+.glavny {
+  color: #551a8b;
+}
+
+.nommla {
+  margin-top: 20px;
+}
+
+.katalog {
+  color: #454F5B;
+}
+
 .tepa {
   display: flex;
   gap: 100px;

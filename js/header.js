@@ -12,12 +12,11 @@ headerBurger.addEventListener("click", (e) => {
   }
 });
 let kotalog = document.querySelector(".catalog");
-console.log(kotalog);
 
 console.log(window.location.href);
 
 kotalog.addEventListener("click", () => {
-  console.log("click");
+    
 
   window.location.href = "http://127.0.0.1:5500/catalog.html";
 });
