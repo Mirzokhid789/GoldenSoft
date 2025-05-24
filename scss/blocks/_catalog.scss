@@ -604,8 +604,11 @@
 
 .checkmarks {
 	display: flex;
-	width: 440px;
 	gap: 30px;
+
+	div {
+		display: flex;
+	}
 
 	label {
 		font-size: 20px;
@@ -651,10 +654,12 @@
 	}
 
 	.last-seen_box {
-		overflow-y: scroll;
+		height: fit-content;
+		overflow-y: hidden;
+		overflow-x: scroll;
 		.product-image {
 			width: 288px;
-			height: 320px;
+			height: fit-content;
 		}
 	}
 

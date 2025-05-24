@@ -1,22 +1,4 @@
-const featureMap = {
-	'Электронные кодовые замки': 'electronic',
-	'Биометрические замки': 'biometric',
-	'Замок с отппечатком': 'fingerprint',
-	'Замок с бесконтактной картой': 'contactless',
-	'Программируемые замки': 'programmable',
-	'Замки на батарейках': 'battery',
-	'Замки с удаленным доступом': 'remote',
-	'Bluetooth замки': 'bluetooth',
-	'Электронные замки для квартиры': 'apartment',
-	'Замки для стеклянных дверей': 'glass',
-	'Электронные цилиндры': 'cylinder',
-}
-
-const featureCheckboxes = document.querySelectorAll(
-	'.type-of__item input[type="checkbox"]'
-)
 const ProductWrapper = document.querySelector('.products')
-
 
 function displayProducts(arr) {
 	ProductWrapper.innerHTML = ''
@@ -44,32 +26,21 @@ function displayProducts(arr) {
 	})
 }
 
-function getCheckedFeatures() {
-	return Array.from(featureCheckboxes)
-		.filter((checkbox) => checkbox.checked)
-		.map((checkbox) => {
-			const labelText = checkbox.nextElementSibling.textContent.trim()
-			return featureMap[labelText]
-		})
-		.filter(Boolean)
-}
-
-function filterByFeatures() {
-	const selectedFeatures = getCheckedFeatures()
-	if (selectedFeatures.length === 0) {
-		displayProducts(products)
-		return
-	}
-
-	const filtered = products.filter((product) =>
-		selectedFeatures.every((feature) => product.features.includes(feature))
-	)
-
-	displayProducts(filtered)
-}
-
-featureCheckboxes.forEach((checkbox) =>
-	checkbox.addEventListener('change', filterByFeatures)
-)
-
 displayProducts(products)
+
+function updateDropdownText(text) {
+	document.getElementById('dropdownMenuButton').textContent = text
+}
+
+function sortProducts(criteria, label) {
+	let sorted = [...products]
+	if (criteria === 'rating') {
+		sorted.sort((a, b) => b.rating - a.rating)
+	} else if (criteria === 'reviews') {
+		sorted.sort((a, b) => b.reviews - a.reviews)
+	} else if (criteria === 'price') {
+		sorted.sort((a, b) => a.price - b.price)
+	}
+	updateDropdownText(label)
+	displayProducts(sorted)
+}
