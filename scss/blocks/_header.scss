@@ -1,51 +1,50 @@
 .header__wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-  align-items: center;
-  margin-bottom: 20px;
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+	align-items: center;
+	margin-bottom: 20px;
 }
 
 .header__list-item {
-  gap: 20px;
-  display: flex;
-
+	gap: 20px;
+	display: flex;
 }
 
 .list-item__link {
-  color: #161c24;
+	color: #161c24;
 }
 
 .header__link {
-  color: gray;
+	color: gray;
 }
 
 .header__burger {
-  display: none;
+	display: none;
 }
 
 .header__burger--list {
-  display: none;
+	display: none;
 }
 
-.ul-li_title{
-  color: #454F5B;
+.ul-li_title {
+	color: #454f5b;
 }
 
-.ul-li_titlee{
-  color: #161C24;
+.ul-li_titlee {
+	color: #161c24;
 }
 
-.glavny{
-  color: #551a8b;
+.glavny {
+	color: #551a8b;
 }
 
-.nommla{
-  margin-top: 20px;
+.nommla {
+	margin-top: 20px;
 }
 
-.katalog{
-  color: #454F5B;
+.katalog {
+	color: #454f5b;
 }
 // .phonega{
 //   margin-top: 340px;
@@ -54,73 +53,73 @@
 // }
 
 .tepa {
-  display: flex;
-  gap: 100px;
-  align-items: center;
+	display: flex;
+	gap: 100px;
+	align-items: center;
 }
 
 .nom__ul-li {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
 }
 
 .hrlar {
-  width: 333px;
+	width: 333px;
 }
 
 .ul-li_titlee {
-  display: flex;
-  gap: 220px;
+	display: flex;
+	gap: 220px;
 }
 
 .header__list2-item {
-  display: flex;
-  align-items: center;
-  gap: 20px;
+	display: flex;
+	align-items: center;
+	gap: 20px;
 }
 
 .header__oxrgisi {
-  display: flex;
-  align-items: center;
-  gap: 30px;
+	display: flex;
+	align-items: center;
+	gap: 30px;
 }
 
 .bi-telephone {
-  color: blue;
+	color: blue;
 }
 
 @media only screen and (max-width: 815px) {
-  .header__link {
-    display: none;
-  }
+	.header__link {
+		display: none;
+	}
 }
 
 @media only screen and (max-width: 648px) {
-  .header__list {
-    display: none;
-  }
+	.header__list {
+		display: none;
+	}
 }
 
 .active {
-  display: flex;
-  position: absolute;
+	display: flex;
+	position: absolute;
 }
 
 @media only screen and (max-width: 400px) {
-  .header__burger {
-    display: inline;
-  }
+	.header__burger {
+		display: inline;
+	}
 
-  .header__burger--list {
-    flex-direction: column;
-    top: 80px;
-    height: 100vh;
-    width: 100vw;
-    background-color: white;
-  }
+	.header__burger--list {
+		flex-direction: column;
+		top: 80px;
+		height: 100vh;
+		width: 100vw;
+		background-color: white;
+	}
 
-  .header__logo {
-    display: none;
-  }
+	.header__logo {
+		display: none;
+	}
 }
