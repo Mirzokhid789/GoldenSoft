@@ -134,3 +134,37 @@
   text-align: center;
   margin-top: 40px;
 }
+
+.section1__wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 82px;
+}
+
+.section-1 {
+  background-color: #f2f8ff;
+  padding: 40px;
+}
+
+.section1__title{
+  color: #161C24;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 38px;
+  margin-bottom: 16px;
+}
+.section1__text{
+  color: #454F5B;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+@media (max-width: 680px) {
+  .section1__wrapper{
+    flex-wrap: wrap;
+    place-items : center;
+  }
+}

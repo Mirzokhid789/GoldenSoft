@@ -1,369 +1,418 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
-    />
-    <link rel="stylesheet" href="./css/style.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="container">
-        <div class="header__wrapper">
-          <div class="header__burger"><i class="bi bi-list" id="menu"></i></div>
-          <div class="header__burger--list">
-            <ul class="nom__ul">
-              <li class="nom__ul-li">
-                <h3 class="ul-li_title">Главная</h3>
-                <hr class="hrlar" />
-                <h3 class="ul-li_titlee">
-                  <a href="./catalog.html"
-                    >Каталог <i class="bi bi-arrow-right"></i
-                  ></a>
-                </h3>
-                <hr class="hrlar" />
-                <h3 class="ul-li_title">Оптовая продажа</h3>
-                <hr class="hrlar" />
-                <h3 class="ul-li_title">О нас</h3>
-                <hr class="hrlar" />
-              </li>
-            </ul>
-            <!-- <div class="phonega">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-j1CDi7MgGQ12Z7Qab0qlWQ/Qqz24Gc6BM0thvEMVjHnfYGF0rmFCozFSxQBxwHKO"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__burger"><i class="bi bi-list" id="menu"></i></div>
+					<div class="header__burger--list">
+						<ul class="nom__ul">
+							<li class="nom__ul-li">
+								<h3 class="ul-li_title glav">Главная</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_titlee">
+									<a href="./catalog.html"
+										>Каталог <i class="bi bi-arrow-right"></i
+									></a>
+								</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_title thirdnav">Оптовая продажа</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_title 4thnav">О нас</h3>
+								<hr class="hrlar" />
+							</li>
+						</ul>
+						<!-- <div class="phonega">
               <a href="" class="phonega_phone"
                 ><i class="bi bi-telephone"></i>+7 (966) 55 88 499</a
               >
               <a href="" class="phonega_link">Обратный звонок</a>
             </div> -->
-          </div>
-          <div class="tepa">
-            <img src="./assets/Logo.svg" alt="" class="header__logo" />
-            <ul class="header__list">
-              <li class="header__list-item">
-                <a href="" class="list-item__link">Главная</a>
-                <a href="/catalog.html" class="list-item__link catalog"
-                  >Каталог<i class="bi bi-arrow-down-short"></i
-                ></a>
-                <a href="" class="list-item__link">Оптовая продажа</a>
-                <a href="" class="list-item__link">О нас</a>
-              </li>
-            </ul>
-          </div>
+					</div>
+					<div class="tepa">
+						<img src="./assets/Logo.svg" alt="" class="header__logo" />
+						<ul class="header__list">
+							<li class="header__list-item">
+								<a href="" class="list-item__link">Главная</a>
+								<a href="/catalog.html" class="list-item__link catalog"
+									>Каталог<i class="bi bi-arrow-down-short"></i
+								></a>
+								<a href="" class="list-item__link">Оптовая продажа</a>
+								<a href="" class="list-item__link">О нас</a>
+							</li>
+						</ul>
+					</div>
 
-          <ul class="header__list2">
-            <li class="header__list2-item">
-              <a href="" class="header__link"
-                ><i class="bi bi-telephone"></i>+7 (966) 55 88 499</a
-              >
-              <div class="header__oxrgisi">
-                <div class="headerdiki"><i class="bi bi-heart"></i></div>
-                <div class="headerdiki"><i class="bi bi-cart-dash"></i></div>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </header>
-    <hr />
-    <main>
-      <section class="hero">
-        <div class="container">
-          <div class="hero__wrapper">
-            <p class="hero__p">
-              <i class="bi bi-house-door-fill"></i>
-              <span class="brnci">Главная </span> / Каталог /
-              <span class="span__hero"
-                >Дверной Замок Golden Soft <span class="ici">для офиса</span>
-              </span>
-            </p>
-            <div class="hamas">
-              <div class="left__hero">
-                <img src="./assets/hero.svg" alt="" class="hero__top-img" />
-                <ul class="img__hero">
-                  <li class="imgga__hero">
-                    <img src="./assets/1.svg" alt="" class="imgga" />
-                    <img src="./assets/2.svg" alt="" class="imgga" />
-                    <img src="./assets/3.svg" alt="" class="imgga" />
-                    <img src="./assets/4.svg" alt="" class="imgga" />
-                  </li>
-                </ul>
-              </div>
-              <div class="right__hero">
-                <div class="right_tepa">
-                  <p class="tepaniki_p">JA182765</p>
-                  <img src="./assets/рейтинг.svg" alt="" class="tepaniki_img" />
-                  <a href="#" class="tepaniki_link">(12) отзывов</a>
-                  <i class="bii bi-heart"></i>
-                </div>
-                <h1 class="right__title">
-                  Дверной Замок Golden Soft для офиса
-                </h1>
-                <div class="oragan">
-                  <p class="oragan__p">Подходит для установки на:</p>
-                  <div class="trila">
-                    <div class="trilaga">
-                      <input type="checkbox" name="tree" id="" />
-                      <label class="tri" for="tree">Деревянную дверь</label>
-                      <input type="checkbox" name="tree" id="" />
-                      <label class="tri" for="tree">Межкомнатную дверь</label>
-                    </div>
-                  </div>
-                </div>
-                <div class="kampleks">
-                  <div class="kampleks_left">
-                    <p class="kampleks_title">Комплектация</p>
-                    <button class="kampleks_btn">
-                      Smart замок без приложения
-                      <i class="bi bi-arrow-down-short"></i>
-                    </button>
-                  </div>
-                  <div class="kampleks_right">
-                    <p class="kmplks_p">Цвет</p>
-                    <div class="inputt">
-                      <input type="radio" name="option" id="" />
-                      <input type="radio" name="option" id="" />
-                      <input type="radio" name="option" id="" />
-                    </div>
-                  </div>
-                </div>
-                <div class="summa">
-                  <p class="sum">33 000₽</p>
-                  <p class="summ">37 000₽</p>
-                </div>
-                <div class="buttons">
-                  <button class="btns_btn">Купить</button>
-                  <div class="lal">
-                    <i class="bibi bi-heart"></i>
-                    <p class="bibi_p">В избранное</p>
-                  </div>
-                </div>
-                <div class="parts">
-                  <div class="part__one">
-                    <div class="top__part">
-                      <h3 class="title__part">Оплата</h3>
-                      <i class="bi bi-arrow-up-short"></i>
-                    </div>
-                    <p class="part__subtitle">
-                      Оплата при получении товара, Картой онлайн, Google Pay,
-                      Акционная оплата картой Visa, Безналичными для юридических
-                      лиц, Безналичными для физических лиц, Apple Pay,
-                      PrivatPay, Оплата картой в отделении
-                    </p>
-                  </div>
-                  <div class="part__two">
-                    <h3 class="part__two-subtitle">Монтаж и доставка</h3>
-                    <i class="bi bi-arrow-down-short"></i>
-                  </div>
-                  <div class="part__three">
-                    <h3 class="part__three-subtitle">Гарантии и выгода</h3>
-                    <i class="bi bi-arrow-down-short"></i>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="razmerlar">
-        <div class="container">
-          <div class="razmerlar__wrapper">
-            <ul class="razmerlar__titles">
-              <li class="titles-item">
-                <h2 class="title-item1">Характеристики</h2>
-                <h2 class="title-item2">Описание</h2>
-                <h2 class="title-item3">Отзывы</h2>
-              </li>
-            </ul>
-            <div class="razmerlar-box">
-              <ul class="box__left">
-                <li class="box__left-item">
-                  <h3 class="box-item_subtitle">Память на количество карт</h3>
-                  <p class="box-item_p">2033</p>
-                </li>
-                <li class="box__left-item">
-                  <h3 class="box-item_subtitle">Приложение</h3>
-                  <p class="box-item_p">Нет</p>
-                </li>
-                <li class="box__left-item">
-                  <h3 class="box-item_subtitle">Материал</h3>
-                  <p class="box-item_p">Сталь, силиконовые вставки</p>
-                </li>
-                <li class="box__left-item">
-                  <h3 class="box-item_subtitle">Цвет</h3>
-                  <p class="box-item_p">Черный, хром</p>
-                </li>
-                <li class="box__left-item">
-                  <h3 class="box-item_subtitle">Питание</h3>
-                  <p class="box-item_p">DC 6V, 4 AAA</p>
-                </li>
-                <li class="box__left-item">
-                  <h3 class="box-item_subtitle">Разблокировка</h3>
-                  <p class="box-item_pp">
-                    Пин-код, карта или браслет Mifaire, ключ, приложение,
-                    отпечаток пальца
-                  </p>
-                </li>
-              </ul>
+					<ul class="header__list2">
+						<li class="header__list2-item">
+							<a href="" class="header__link"
+								><i class="bi bi-telephone"></i>+7 (966) 55 88 499</a
+							>
+							<div class="header__oxrgisi">
+								<div class="headerdiki"><i class="bi bi-heart"></i></div>
+								<div class="headerdiki"><i class="bi bi-cart-dash"></i></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<hr />
+		<main>
+			<section class="hero">
+				<div class="container">
+					<div class="hero__wrapper">
+						<p class="hero__p">
+							<i class="bi bi-house-door-fill"></i>
+							<span class="brnci">Главная </span> / Каталог /
+							<span class="span__hero"
+								>Дверной Замок Golden Soft <span class="ici">для офиса</span>
+							</span>
+						</p>
+						<div class="hamas">
+							<div class="left__hero">
+								<img src="./assets/hero.svg" alt="" class="hero__top-img" />
+								<ul class="img__hero">
+									<li class="imgga__hero">
+										<img src="./assets/1.svg" alt="" class="imgga" />
+										<img src="./assets/2.svg" alt="" class="imgga" />
+										<img src="./assets/3.svg" alt="" class="imgga" />
+										<img src="./assets/4.svg" alt="" class="imgga" />
+									</li>
+								</ul>
+							</div>
+							<div class="right__hero">
+								<div class="right_tepa">
+									<p class="tepaniki_p">JA182765</p>
+									<img src="./assets/рейтинг.svg" alt="" class="tepaniki_img" />
+									<a href="#" class="tepaniki_link">(12) отзывов</a>
+									<i class="bii bi-heart"></i>
+								</div>
+								<h1 class="right__title">
+									Дверной Замок Golden Soft для офиса
+								</h1>
+								<div class="oragan">
+									<p class="oragan__p">Подходит для установки на:</p>
+									<div class="trila">
+										<div class="trilaga">
+											<input type="checkbox" name="tree" id="" />
+											<label class="tri" for="tree">Деревянную дверь</label>
+											<input type="checkbox" name="tree" id="" />
+											<label class="tri" for="tree">Межкомнатную дверь</label>
+										</div>
+									</div>
+								</div>
+								<div class="kampleks">
+									<div class="kampleks_left">
+										<p class="kampleks_title">Комплектация</p>
+										<div class="dropdown dropdown2">
+											<button
+												class="btn dropdown-pop dropdown-toggle"
+												type="button"
+												id="dropdownMenuButton"
+												data-bs-toggle="dropdown"
+												aria-expanded="false"
+											>
+												Smart замок без приложения
+											</button>
+											<ul
+												class="dropdown-menu"
+												aria-labelledby="dropdownMenuButton"
+											>
+												<li>
+													<a
+														class="dropdown-item"
+														href="#"
+														onclick="sortProducts('', 'Default')"
+														>Smart накладка на замок</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item"
+														style="color: aqua;"
+														href="#"
+														onclick="sortProducts('rating', 'Рейтингу')"
+														>Smart замок без приложения</a
+													>
+												</li>
+												<li>
+													<a
+														class="dropdown-item"
+														href="#"
+														onclick="sortProducts('reviews', 'Популярности')"
+														>Без мартизы, без приложения</a
+													>
+												</li>
+											</ul>
+										</div>
+									</div>
+									<div class="kampleks_right">
+										<p class="kmplks_p">Цвет</p>
+										<div class="inputt">
+											<input type="radio" name="option" id="" />
+											<input type="radio" name="option" id="" />
+											<input type="radio" name="option" id="" />
+										</div>
+									</div>
+								</div>
+								<div class="summa">
+									<p class="sum">33 000₽</p>
+									<p class="summ">37 000₽</p>
+								</div>
+								<div class="buttons">
+									<button class="btns_btn">Купить</button>
+									<div class="lal">
+										<i class="bibi bi-heart"></i>
+										<p class="bibi_p">В избранное</p>
+									</div>
+								</div>
+								<div class="parts">
+									<div class="part__one">
+										<div class="top__part">
+											<h3 class="title__part">Оплата</h3>
+											<i class="bi bi-arrow-up-short"></i>
+										</div>
+										<p class="part__subtitle">
+											Оплата при получении товара, Картой онлайн, Google Pay,
+											Акционная оплата картой Visa, Безналичными для юридических
+											лиц, Безналичными для физических лиц, Apple Pay,
+											PrivatPay, Оплата картой в отделении
+										</p>
+									</div>
+									<div class="part__two">
+										<h3 class="part__two-subtitle">Монтаж и доставка</h3>
+										<i class="bi bi-arrow-down-short"></i>
+									</div>
+									<div class="part__three">
+										<h3 class="part__three-subtitle">Гарантии и выгода</h3>
+										<i class="bi bi-arrow-down-short"></i>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="razmerlar">
+				<div class="container">
+					<div class="razmerlar__wrapper">
+						<ul class="razmerlar__titles">
+							<li class="titles-item">
+								<h2 class="title-item1">Характеристики</h2>
+								<h2 class="title-item2">Описание</h2>
+								<h2 class="title-item3">Отзывы</h2>
+							</li>
+						</ul>
+						<div class="razmerlar-box">
+							<ul class="box__left">
+								<li class="box__left-item">
+									<h3 class="box-item_subtitle">Память на количество карт</h3>
+									<p class="box-item_p">2033</p>
+								</li>
+								<li class="box__left-item">
+									<h3 class="box-item_subtitle">Приложение</h3>
+									<p class="box-item_p">Нет</p>
+								</li>
+								<li class="box__left-item">
+									<h3 class="box-item_subtitle">Материал</h3>
+									<p class="box-item_p">Сталь, силиконовые вставки</p>
+								</li>
+								<li class="box__left-item">
+									<h3 class="box-item_subtitle">Цвет</h3>
+									<p class="box-item_p">Черный, хром</p>
+								</li>
+								<li class="box__left-item">
+									<h3 class="box-item_subtitle">Питание</h3>
+									<p class="box-item_p">DC 6V, 4 AAA</p>
+								</li>
+								<li class="box__left-item">
+									<h3 class="box-item_subtitle">Разблокировка</h3>
+									<p class="box-item_pp">
+										Пин-код, карта или браслет Mifaire, ключ, приложение,
+										отпечаток пальца
+									</p>
+								</li>
+							</ul>
 
-              <ul class="box__right">
-                <li class="box__right-items">
-                  <h3 class="box-items_subtitle">Тип двери</h3>
-                  <p class="box-items_p">Деревянная, металлическая</p>
-                </li>
-                <li class="box__right-items">
-                  <h3 class="box-items_subtitle">Толщина двери</h3>
-                  <p class="box-items_p">38-55 мм</p>
-                </li>
-                <li class="box__right-items">
-                  <h3 class="box-items_subtitle">Размеры</h3>
-                  <p class="box-items_p">302мм * 43мм * 22.55мм</p>
-                </li>
-                <li class="box__right-items">
-                  <h3 class="box-items_subtitle">Вес</h3>
-                  <p class="box-items_p">2.5 кг</p>
-                </li>
-                <li class="box__right-items">
-                  <h3 class="box-items_subtitle">Комплектация</h3>
-                  <p class="box-items_p">Без мартизы, с мартизой</p>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="product_section">
-        <div class="container">
-          <div class="lalala">
-            <h3 class="product_h3">Вы недавно просмотрели</h3>
-            <div class="ora_product">
-              <i class="bi bi-caret-left-fill"></i>
-              <i class="bi bi-caret-right-fill"></i>
-            </div>
-          </div>
-          <div class="products_wrapper">
-            <div class="product_child">
-              <div class="products_image">
-                <span class="agree">
-                  <img src="./assets/В наличии.svg" alt="" />
-                  <img src="./assets/gift2.svg" alt="" />
-                </span>
-                <img src="./assets/sale.svg" alt="" class="sale" />
-                <img
-                  src="./assets/brncisiii.svg"
-                  alt="Rectangle"
-                  class="product_pic"
-                />
-              </div>
-              <div class="products__bottom">
-                <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
-                <p class="products_second-text">
-                  33 000₽
-                  <span
-                    style="
+							<ul class="box__right">
+								<li class="box__right-items">
+									<h3 class="box-items_subtitle">Тип двери</h3>
+									<p class="box-items_p">Деревянная, металлическая</p>
+								</li>
+								<li class="box__right-items">
+									<h3 class="box-items_subtitle">Толщина двери</h3>
+									<p class="box-items_p">38-55 мм</p>
+								</li>
+								<li class="box__right-items">
+									<h3 class="box-items_subtitle">Размеры</h3>
+									<p class="box-items_p">302мм * 43мм * 22.55мм</p>
+								</li>
+								<li class="box__right-items">
+									<h3 class="box-items_subtitle">Вес</h3>
+									<p class="box-items_p">2.5 кг</p>
+								</li>
+								<li class="box__right-items">
+									<h3 class="box-items_subtitle">Комплектация</h3>
+									<p class="box-items_p">Без мартизы, с мартизой</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="product_section">
+				<div class="container">
+					<div class="lalala">
+						<h3 class="product_h3">Вы недавно просмотрели</h3>
+						<div class="ora_product">
+							<i class="bi bi-caret-left-fill"></i>
+							<i class="bi bi-caret-right-fill"></i>
+						</div>
+					</div>
+					<div class="products_wrapper">
+						<div class="product_child">
+							<div class="products_image">
+								<span class="agree">
+									<img src="./assets/В наличии.svg" alt="" />
+									<img src="./assets/gift2.svg" alt="" />
+								</span>
+								<img src="./assets/sale.svg" alt="" class="sale" />
+								<img
+									src="./assets/brncisiii.svg"
+									alt="Rectangle"
+									class="product_pic"
+								/>
+							</div>
+							<div class="products__bottom">
+								<p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
+								<p class="products_second-text">
+									33 000₽
+									<span
+										style="
                       color: #454f5b;
                       font-weight: 300;
                       text-decoration: line-through;
                     "
-                    >37 000₽</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="product_child">
-              <div class="products_image">
-                <span class="agree">
-                  <img src="./assets/В наличии.svg" alt="" />
-                  <img src="./assets/gift2.svg" alt="" />
-                </span>
-                <img src="./assets/sale.svg" alt="" class="sale" />
-                <img
-                  src="./assets/ikncisiiiiiii.svg"
-                  alt="Rectangle"
-                  class="product_pic"
-                />
-              </div>
-              <div class="products__bottom">
-                <p class="product_zamok">
-                  Вариативный замок Golden Soft для отеля
-                </p>
-                <p class="products_second-text">
-                  7 000₽
-                  <span
-                    style="
+										>37 000₽</span
+									>
+								</p>
+							</div>
+						</div>
+						<div class="product_child">
+							<div class="products_image">
+								<span class="agree">
+									<img src="./assets/В наличии.svg" alt="" />
+									<img src="./assets/gift2.svg" alt="" />
+								</span>
+								<img src="./assets/sale.svg" alt="" class="sale" />
+								<img
+									src="./assets/ikncisiiiiiii.svg"
+									alt="Rectangle"
+									class="product_pic"
+								/>
+							</div>
+							<div class="products__bottom">
+								<p class="product_zamok">
+									Вариативный замок Golden Soft для отеля
+								</p>
+								<p class="products_second-text">
+									7 000₽
+									<span
+										style="
                       color: #454f5b;
                       font-weight: 300;
                       text-decoration: line-through;
                     "
-                    >8 000₽</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="product_child">
-              <div class="products_image">
-                <span class="agree">
-                  <img src="./assets/В наличии.svg" alt="" />
-                  <img src="./assets/gift2.svg" alt="" />
-                </span>
-                <img src="./assets/sale.svg" alt="" class="sale" />
-                <img
-                  src="./assets/ucncisi.svg"
-                  alt="Rectangle"
-                  class="product_pic"
-                />
-              </div>
-              <div class="products__bottom">
-                <p class="product_zamok">Дверной Замок Golden Soft для офиса</p>
-                <p class="products_second-text">
-                  33 000₽
-                  <span
-                    style="
+										>8 000₽</span
+									>
+								</p>
+							</div>
+						</div>
+						<div class="product_child">
+							<div class="products_image">
+								<span class="agree">
+									<img src="./assets/В наличии.svg" alt="" />
+									<img src="./assets/gift2.svg" alt="" />
+								</span>
+								<img src="./assets/sale.svg" alt="" class="sale" />
+								<img
+									src="./assets/ucncisi.svg"
+									alt="Rectangle"
+									class="product_pic"
+								/>
+							</div>
+							<div class="products__bottom">
+								<p class="product_zamok">Дверной Замок Golden Soft для офиса</p>
+								<p class="products_second-text">
+									33 000₽
+									<span
+										style="
                       color: #454f5b;
                       font-weight: 300;
                       text-decoration: line-through;
                     "
-                    >37 000₽</span
-                  >
-                </p>
-              </div>
-            </div>
-            <div class="product_child">
-              <div class="products_image">
-                <span class="agree">
-                  <img src="./assets/В наличии.svg" alt="" />
-                  <img src="./assets/gift2.svg" alt="" />
-                </span>
-                <img src="./assets/sale.svg" alt="" class="sale" />
-                <img
-                  src="./assets/tortincisi.svg"
-                  alt="Rectangle"
-                  class="product_pic"
-                />
-              </div>
-              <div class="products__bottom">
-                <p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
-                <p class="products_second-text">
-                  33 000₽
-                  <span
-                    style="
+										>37 000₽</span
+									>
+								</p>
+							</div>
+						</div>
+						<div class="product_child">
+							<div class="products_image">
+								<span class="agree">
+									<img src="./assets/В наличии.svg" alt="" />
+									<img src="./assets/gift2.svg" alt="" />
+								</span>
+								<img src="./assets/sale.svg" alt="" class="sale" />
+								<img
+									src="./assets/tortincisi.svg"
+									alt="Rectangle"
+									class="product_pic"
+								/>
+							</div>
+							<div class="products__bottom">
+								<p class="product_zamok">Дверной Замок Golden Soft для отеля</p>
+								<p class="products_second-text">
+									33 000₽
+									<span
+										style="
                       color: #454f5b;
                       font-weight: 300;
                       text-decoration: line-through;
                     "
-                    >37 000₽</span
-                  >
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-    </main>
-
-    <script src="./js/app.js"></script>
-    <script src="./js/header.js"></script>
-  </body>
+										>37 000₽</span
+									>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./js/header.js"></script>
+		<script src="./js/product.js"></script>
+		<script src="./js/app.js"></script>
+		<script src="./js/enter.js"></script>
+	</body>
 </html>
