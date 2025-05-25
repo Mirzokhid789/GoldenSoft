@@ -27,34 +27,36 @@
 				<div class="header__wrapper">
 					<div class="header__burger"><i class="bi bi-list" id="menu"></i></div>
 					<div class="header__burger--list">
-						<ul class="nom__ul">
+						<ul class="nom__ul nommla">
 							<li class="nom__ul-li">
-								<h3 class="ul-li_title glav">Главная</h3>
-								<hr class="hrlar" />
-								<h3 class="ul-li_titlee">
-									<a href="./catalog.html"
-										>Каталог <i class="bi bi-arrow-right"></i
+								<h3 class="ul-li_title">
+									<a class="glavny" href="./index.html"
+										>Главная<i class="bi bi-arrow-right"></i
 									></a>
 								</h3>
 								<hr class="hrlar" />
-								<h3 class="ul-li_title thirdnav">Оптовая продажа</h3>
+								<h3 class="ul-li_titlee ">
+									<a class="katalog" href="./catalog.html">Каталог </a>
+								</h3>
 								<hr class="hrlar" />
-								<h3 class="ul-li_title 4thnav">О нас</h3>
+								<h3 class="ul-li_title">
+									<a class="ul-li_title" href="./wholesale.html"
+										>Оптовая продажа</a
+									>
+								</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_title">
+									<a class="ul-li_title" href="./about.html">О нас</a>
+								</h3>
 								<hr class="hrlar" />
 							</li>
 						</ul>
-						<!-- <div class="phonega">
-              <a href="" class="phonega_phone"
-                ><i class="bi bi-telephone"></i>+7 (966) 55 88 499</a
-              >
-              <a href="" class="phonega_link">Обратный звонок</a>
-            </div> -->
 					</div>
 					<div class="tepa">
 						<img src="./assets/Logo.svg" alt="" class="header__logo" />
 						<ul class="header__list">
 							<li class="header__list-item">
-								<a href="" class="list-item__link">Главная</a>
+								<a href="/index.html" class="list-item__link">Главная</a>
 								<a href="/catalog.html" class="list-item__link catalog"
 									>Каталог<i class="bi bi-arrow-down-short"></i
 								></a>
@@ -63,7 +65,6 @@
 							</li>
 						</ul>
 					</div>
-
 					<ul class="header__list2">
 						<li class="header__list2-item">
 							<a href="" class="header__link"
@@ -92,26 +93,49 @@
 						</p>
 						<div class="hamas">
 							<div class="left__hero">
-								<img src="./assets/hero.svg" alt="" class="hero__top-img" />
+								<img
+									src="./assets/hero.svg"
+									alt=""
+									class="hero__top-img"
+									id="product-img"
+								/>
 								<ul class="img__hero">
 									<li class="imgga__hero">
-										<img src="./assets/1.svg" alt="" class="imgga" />
-										<img src="./assets/2.svg" alt="" class="imgga" />
-										<img src="./assets/3.svg" alt="" class="imgga" />
-										<img src="./assets/4.svg" alt="" class="imgga" />
+										<img
+											src="./assets/1.svg"
+											alt=""
+											class="imgga"
+											id="product-img"
+										/>
+										<img
+											src="./assets/2.svg"
+											alt=""
+											class="imgga"
+											id="product-img"
+										/>
+										<img
+											src="./assets/3.svg"
+											alt=""
+											class="imgga"
+											id="product-img"
+										/>
+										<img
+											src="./assets/4.svg"
+											alt=""
+											class="imgga"
+											id="product-img"
+										/>
 									</li>
 								</ul>
 							</div>
 							<div class="right__hero">
 								<div class="right_tepa">
-									<p class="tepaniki_p">JA182765</p>
-									<img src="./assets/рейтинг.svg" alt="" class="tepaniki_img" />
+									<p style="display: none;" class="tepaniki_p">JA182765</p>
+									<span class="tepaniki_rating" id="product-rating"></span>
 									<a href="#" class="tepaniki_link">(12) отзывов</a>
 									<i class="bii bi-heart"></i>
 								</div>
-								<h1 class="right__title">
-									Дверной Замок Golden Soft для офиса
-								</h1>
+								<h1 class="right__title" id="product-name"></h1>
 								<div class="oragan">
 									<p class="oragan__p">Подходит для установки на:</p>
 									<div class="trila">
@@ -123,63 +147,9 @@
 										</div>
 									</div>
 								</div>
-								<div class="kampleks">
-									<div class="kampleks_left">
-										<p class="kampleks_title">Комплектация</p>
-										<div class="dropdown dropdown2">
-											<button
-												class="btn dropdown-pop dropdown-toggle"
-												type="button"
-												id="dropdownMenuButton"
-												data-bs-toggle="dropdown"
-												aria-expanded="false"
-											>
-												Smart замок без приложения
-											</button>
-											<ul
-												class="dropdown-menu"
-												aria-labelledby="dropdownMenuButton"
-											>
-												<li>
-													<a
-														class="dropdown-item"
-														href="#"
-														onclick="sortProducts('', 'Default')"
-														>Smart накладка на замок</a
-													>
-												</li>
-												<li>
-													<a
-														class="dropdown-item"
-														style="color: aqua;"
-														href="#"
-														onclick="sortProducts('rating', 'Рейтингу')"
-														>Smart замок без приложения</a
-													>
-												</li>
-												<li>
-													<a
-														class="dropdown-item"
-														href="#"
-														onclick="sortProducts('reviews', 'Популярности')"
-														>Без мартизы, без приложения</a
-													>
-												</li>
-											</ul>
-										</div>
-									</div>
-									<div class="kampleks_right">
-										<p class="kmplks_p">Цвет</p>
-										<div class="inputt">
-											<input type="radio" name="option" id="" />
-											<input type="radio" name="option" id="" />
-											<input type="radio" name="option" id="" />
-										</div>
-									</div>
-								</div>
 								<div class="summa">
-									<p class="sum">33 000₽</p>
-									<p class="summ">37 000₽</p>
+									<p class="sum" id="product-price"></p>
+									<p class="summ" id="product-old-price"></p>
 								</div>
 								<div class="buttons">
 									<button class="btns_btn">Купить</button>
@@ -414,5 +384,6 @@
 		<script src="./js/product.js"></script>
 		<script src="./js/app.js"></script>
 		<script src="./js/enter.js"></script>
+		<script src="./js/product2.js"></script>
 	</body>
 </html>
