@@ -2705,7 +2705,14 @@ a {
     flex-direction: column;
     width: 100%;
   }
+  .sidebar {
+    display: block;
+  }
 }
+.display-block {
+  display: block;
+}
+
 .hero_title {
   color: #161c24;
   font-weight: 600;

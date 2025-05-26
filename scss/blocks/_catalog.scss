@@ -388,7 +388,7 @@
 	.filters {
 		display: none;
 	}
-	
+
 	.dropdown {
 		width: 323.75px;
 		text-align: left;
@@ -728,4 +728,11 @@
 		flex-direction: column;
 		width: 100%;
 	}
+
+	.sidebar {
+		display: block;
+	}
+}
+.display-block {
+	display: block;
 }
