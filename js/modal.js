@@ -21,29 +21,26 @@ const oxirgi_span_66000 = document.querySelector(".oxirgi_span");
 let quantity = 2;
 const pricePerItem = 33000;
 
-// function BtnFunction() {
-//   btnniOrasidagi2.textContent = quantity;
-//   const total = quantity * pricePerItem;
-//   oxirgi_son_33000.textContent = total.toLocaleString("ru-RU") + "₽";
-//   oxirgi_span_66000.textContent = total.toLocaleString("ru-RU") + "₽";
-// }
+function BtnFunction() {
+  btnniOrasidagi2.textContent = quantity;
+  const total = quantity * pricePerItem;
+  oxirgi_span_66000.textContent = total.toLocaleString("ru-RU") + "₽";
+}
 
 minusBtn.addEventListener("click", () => {
   if (quantity > 1) {
     quantity--;
-    btnniOrasidagi2.innerHTML = quantity;
-    // BtnFunction();
+    // btnniOrasidagi2.innerHTML = quantity;
+    BtnFunction();
   }
 });
 
 plusBtn.addEventListener("click", () => {
   quantity++;
-  btnniOrasidagi2.innerHTML = quantity;
-  // BtnFunction();
+  // btnniOrasidagi2.innerHTML = quantity;
+  BtnFunction();
 });
 
-
-
-// BtnFunction();
+BtnFunction();
 
 //__________________________________________________________________
