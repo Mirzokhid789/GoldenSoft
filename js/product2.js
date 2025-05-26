@@ -36,3 +36,7 @@ if (product) {
 } else {
 	document.body.innerHTML = '<h2>Продукт не найден</h2>'
 }
+
+
+
+
