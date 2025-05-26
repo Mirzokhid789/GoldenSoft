@@ -14,46 +14,23 @@
 		<header class="header">
 			<div class="container">
 				<div class="header__wrapper">
-					<div class="header__burger"><i class="bi bi-list" id="menu"></i></div>
-					<div class="header__burger--list">
-						<ul class="nom__ul nommla">
-							<li class="nom__ul-li">
-								<h3 class="ul-li_title">
-									<a class="glavny" href="./index.html"
-										>Главная<i class="bi bi-arrow-right"></i
-									></a>
-								</h3>
-								<hr class="hrlar" />
-								<h3 class="ul-li_titlee ">
-									<a class="katalog" href="./catalog.html">Каталог </a>
-								</h3>
-								<hr class="hrlar" />
-								<h3 class="ul-li_title">
-									<a class="ul-li_title" href="./wholesale.html"
-										>Оптовая продажа</a
-									>
-								</h3>
-								<hr class="hrlar" />
-								<h3 class="ul-li_title">
-									<a class="ul-li_title" href="./about.html">О нас</a>
-								</h3>
-								<hr class="hrlar" />
-							</li>
-						</ul>
-					</div>
 					<div class="tepa">
+						<div class="header__burger"><i class="bi bi-list"></i></div>
 						<img src="./assets/Logo.svg" alt="" class="header__logo" />
 						<ul class="header__list">
 							<li class="header__list-item">
-								<a href="/index.html" class="list-item__link">Главная</a>
-								<a href="/catalog.html" class="list-item__link catalog"
+								<a href="./index.html" class="list-item__link">Главная</a>
+								<a href="./catalog.html" class="list-item__link"
 									>Каталог<i class="bi bi-arrow-down-short"></i
 								></a>
-								<a href="./wholesale.html" class="list-item__link">Оптовая продажа</a>
-								<a href="/about.html" class="list-item__link">О нас</a>
+								<a href="./finally.html" class="list-item__link"
+									>Оптовая продажа</a
+								>
+								<a href="./about.html" class="list-item__link">О нас</a>
 							</li>
 						</ul>
 					</div>
+
 					<ul class="header__list2">
 						<li class="header__list2-item">
 							<a href="" class="header__link"
@@ -61,7 +38,9 @@
 							>
 							<div class="header__oxrgisi">
 								<div class="headerdiki"><i class="bi bi-heart"></i></div>
-								<div class="headerdiki"><i class="bi bi-cart-dash"></i></div>
+								<div class="headerdiki">
+									<i class="bi bi-cart-dash korzina"></i>
+								</div>
 							</div>
 						</li>
 					</ul>
@@ -110,10 +89,41 @@
 						</div>
 					</div>
 
+					<div class="cart-item">
+						<div class="item-main">
+							<div class="item-image">
+								<img src="./assets/Rectangle 791.svg" alt="" />
+							</div>
+							<div class="item-details">
+								<div class="item-name">
+									Дверной Замок Golden Soft для
+									<p class="delete-btn"><i class="bi bi-trash3"></i> Удалить</p>
+									<i class="bi bi-three-dots-vertical"></i>
+								</div>
+								<div class="item-gift">
+									<div class="item__items">
+										<p style="color: black">+ Подарок:</p>
+										<p class="fffff" style="text-decoration: underline">
+											"Приложение к замкам Golden Service"
+										</p>
+									</div>
+									<div class="item-controls">
+										<div class="quantity-controls">
+											<button class="qty-btn minusBtn">−</button>
+											<span class="quantity">2</span>
+											<button class="qty-btn plusBtn">+</button>
+										</div>
+										<div class="item-price">33 000₽</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
 					<div class="cart-total">
 						<div class="total-row">
 							<span>Итого:</span>
-							<span>66 000₽</span>
+							<span class="oxirgi_span">66 000₽</span>
 						</div>
 					</div>
 					<div class="card__recomendation__Wrapeer">
@@ -122,80 +132,70 @@
 							<button class="btn-secondary">Продолжить покупки</button>
 						</div>
 
-						<div class="recommendations">
-							<h3 class="rec-title">С этим покупают</h3>
-
-							<div class="rec-item">
-								<div class="rec-image">
-									<img src="./assets/Rectangle 792.svg" alt="" />
-								</div>
-								<div class="rec-details">
-									<div class="rec-name">
-										Дверной Замок Golden Soft для офиса
-									</div>
-									<div class="rec-rating">
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star empty">★</span>
-										<span class="star empty">★</span>
-										<span class="rec-reviews">(12) отзывов</span>
-									</div>
-									<div class="rec-price">
-										<span class="price-current">9 000₽</span>
-										<span class="price-old">12000₽</span>
-									</div>
-								</div>
-								<p class="add-text">+ Добавить</p>
+						<div class="rec-item">
+							<div class="rec-image">
+								<img src="./assets/Rectangle 792.svg" alt="" />
 							</div>
-
-							<div class="rec-item">
-								<div class="rec-image">
-									<img src="./assets/Rectangle 792.svg" alt="" />
+							<div class="rec-details">
+								<div class="rec-name">Дверной Замок Golden Soft для офиса</div>
+								<div class="rec-rating">
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star empty">★</span>
+									<span class="star empty">★</span>
+									<span class="rec-reviews">(12) отзывов</span>
 								</div>
-								<div class="rec-details">
-									<div class="rec-name">
-										Дверной Замок Golden Soft для офиса
-									</div>
-									<div class="rec-rating">
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star empty">★</span>
-										<span class="rec-reviews">(12) отзывов</span>
-									</div>
-									<div class="rec-price">
-										<span class="price-current">9 000₽</span>
-										<span class="price-old">12 000₽</span>
-									</div>
+								<div class="rec-price">
+									<span class="price-current">9 000₽</span>
+									<span class="price-old">12000₽</span>
 								</div>
-								<p class="add-text">+ Добавить</p>
 							</div>
+							<p class="add-text">+ Добавить</p>
+						</div>
 
-							<div class="rec-item">
-								<div class="rec-image">
-									<img src="./assets/Rectangle 792.svg" alt="" />
-								</div>
-								<div class="rec-details">
-									<div class="rec-name">
-										Дверной Замок Golden Soft для офиса
-									</div>
-									<div class="rec-rating">
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star">★</span>
-										<span class="star empty">★</span>
-										<span class="star empty">★</span>
-										<span class="rec-reviews">(12) отзывов</span>
-									</div>
-									<div class="rec-price">
-										<span class="price-current">9 000₽</span>
-										<span class="price-old">10000₽</span>
-									</div>
-								</div>
-								<p class="add-text">+ Добавить</p>
+						<div class="rec-item">
+							<div class="rec-image">
+								<img src="./assets/Rectangle 792.svg" alt="" />
 							</div>
+							<div class="rec-details">
+								<div class="rec-name">Дверной Замок Golden Soft для офиса</div>
+								<div class="rec-rating">
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star empty">★</span>
+									<span class="rec-reviews">(12) отзывов</span>
+								</div>
+								<div class="rec-price">
+									<span class="price-current">9 000₽</span>
+									<span class="price-old">12 000₽</span>
+								</div>
+							</div>
+							<p class="add-text">+ Добавить</p>
+						</div>
+
+						<div class="rec-item">
+							<div class="rec-image">
+								<img src="./assets/Rectangle 792.svg" alt="" />
+							</div>
+							<div class="rec-details">
+								<div class="rec-name">Дверной Замок Golden Soft для офиса</div>
+								<div class="rec-rating">
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star">★</span>
+									<span class="star empty">★</span>
+									<span class="star empty">★</span>
+									<span class="rec-reviews">(12) отзывов</span>
+								</div>
+								<div class="rec-price">
+									<span class="price-current">9 000₽</span>
+									<span class="price-old">10000₽</span>
+								</div>
+							</div>
+							<p class="add-text">+ Добавить</p>
 						</div>
 					</div>
 				</div>
