@@ -1,3 +1,7 @@
+let btn = document.querySelector('.btns_btn')
+console.log(btn);
+
+
 function getProductIdFromURL() {
 	const params = new URLSearchParams(window.location.search)
 	return parseInt(params.get('id')) || null
@@ -30,6 +34,22 @@ function displayProductDetails(product) {
 
 const productId = getProductIdFromURL()
 const product = products.find((p) => p.id === productId)
+let temp = [...JSON.parse(localStorage.getItem('cartItems'))]
+console.log(temp, 'temp')
+	
+
+
+btn.onclick = function(){
+	
+	console.log('hello');
+	
+	temp.push(product)
+	console.log(temp);
+	
+	localStorage.setItem('cartItem', JSON.stringify(temp))
+	btn.innerHTML = 'Check cart !'
+	btn.disabled = true;
+}
 
 if (product) {
 	displayProductDetails(product)
