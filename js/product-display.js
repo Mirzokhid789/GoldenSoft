@@ -52,3 +52,72 @@ function sortProducts(criteria, label) {
 }
 
 displayProducts(products)
+
+const checkboxes = document.querySelectorAll(
+	'.type__material-box input[type="checkbox"]'
+)
+
+checkboxes.forEach((checkbox) => {
+	checkbox.addEventListener('change', handleFilterChange)
+})
+
+function handleFilterChange() {
+	const selectedCategories = Array.from(checkboxes)
+		.filter((cb) => cb.checked)
+		.map((cb) => cb.value)
+
+	if (selectedCategories.length === 0) {
+		displayProducts(products) // Show all
+		return
+	}
+
+	const filtered = products.filter((product) =>
+		selectedCategories.includes(product.category)
+	)
+
+	displayProducts(filtered)
+}
+
+window.addEventListener('DOMContentLoaded', () => {
+	displayProducts(products)
+})
+
+document.querySelector('.mobile-filter-btn').addEventListener('click', () => {
+	document.querySelector('.mobile-filter-panel').classList.toggle('active')
+})
+
+document.querySelectorAll('.accordion').forEach((button) => {
+	button.addEventListener('click', () => {
+		const panel = button.nextElementSibling
+		panel.classList.toggle('active')
+	})
+})
+
+document.querySelector('.show-filters-btn').addEventListener('click', () => {
+	const filtered = getFilteredProducts() // Apply active filters
+	displayProducts(filtered) // Update product list
+	// closeMobileFilter()
+})
+
+function getFilteredProducts() {
+	const checkedFeatures = Array.from(
+		document.querySelectorAll('input[name="feature"]:checked')
+	).map((cb) => cb.value)
+
+	const priceMin = parseInt(document.querySelector('#price-min').value)
+	const priceMax = parseInt(document.querySelector('#price-max').value)
+
+	return products.filter((p) => {
+		const matchesFeature =
+			checkedFeatures.length === 0 || checkedFeatures.includes(p.category)
+		const matchesPrice = p.price >= priceMin && p.price <= priceMax
+		return matchesFeature && matchesPrice
+	})
+}
+
+let showBtn = document
+	.querySelector('.show-filters-btn')
+	.addEventListener('click', (evt) => {
+		evt.preventDefault()
+		window.location.href = `catalog.html`
+	})

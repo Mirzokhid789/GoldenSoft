@@ -279,11 +279,132 @@
 							</ul>
 						</div>
 					</div>
+
+					<button class="mobile-filter-btn">Фильтр</button>
+
+					<div class="mobile-filter-panel">
+						<div class="active-filters">
+							<!-- Example Active Filter Tag -->
+							<p>
+								Выбранные фильтры: <span>Электронные кодовые замки ❌</span>
+							</p>
+						</div>
+
+						<button class="accordion">Цена</button>
+						<div class="panel">
+							<label>Мин: <input type="number" id="price-min" value="5000" /></label><br />
+							<label>Макс: <input type="number" id="price-max" value="25000" /></label>
+						</div>
+
+						<button class="accordion">Особенности</button>
+						<div class="panel">
+							<ul class="type__material-box">
+								<li class="type-of__item">
+									<input
+										class="checkbox-1"
+										type="checkbox"
+										value="Smart Locks"
+									/>
+									<p class="text-of-type">Электронные кодовые замки</p>
+									<span class="grey-num">(65)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-2"
+										type="checkbox"
+										value="Biometric Locks"
+									/>
+									<p class="text-of-type">Биометрические замки</p>
+									<span class="grey-num">(15)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-3"
+										type="checkbox"
+										value="Biometric Readers"
+									/>
+									<p class="text-of-type">Замок с отппечатком</p>
+									<span class="grey-num">(28)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-4"
+										type="checkbox"
+										value="Access Control"
+									/>
+									<p class="text-of-type">Замок с бесконтактной картой</p>
+									<span class="grey-num">(45)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-5"
+										type="checkbox"
+										value="Keypad Locks"
+									/>
+									<p class="text-of-type">Программируемые замки</p>
+									<span class="grey-num">(8)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-6"
+										type="checkbox"
+										value="Hotel Locks"
+									/>
+									<p class="text-of-type">Замки на батарейках</p>
+									<span class="grey-num">(4)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-7"
+										type="checkbox"
+										value="Remote Locks"
+									/>
+									<p class="text-of-type">Замки с удаленным доступом</p>
+									<span class="grey-num">(31)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-8"
+										type="checkbox"
+										value="Wireless Locks"
+									/>
+									<p class="text-of-type">Bluetooth замки</p>
+									<span class="grey-num">(6)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-9"
+										type="checkbox"
+										value="Smart Home"
+									/>
+									<p class="text-of-type">Электронные замки для квартиры</p>
+									<span class="grey-num">(17)</span>
+								</li>
+								<li class="type-of__item">
+									<input
+										class="checkbox-10"
+										type="checkbox"
+										value="Cylinders"
+									/>
+									<p class="text-of-type">Замки для стеклянных дверей</p>
+									<span class="grey-num">(24)</span>
+								</li>
+								<!-- <li class="type-of__item">
+									<input class="checkbox-11" type="checkbox" />
+									<p class="text-of-type">Электронные цилиндры</p>
+									<span class="grey-num">(3)</span>
+								</li> -->
+							</ul>
+						</div>
+
+						<button class="apply-filters show-filters-btn">Показать</button>
+						<button class="reset-filters">Сбросить фильтры</button>
+					</div>
 					<div class="category__box">
 						<div class="layout">
 							<div class="sidebar">
 								<h3>Фильтр</h3>
-								<button class="filter-toggle">Фильтр</button>
+								<!-- <button class="filter-toggle mobile-filter-btn">Фильтр</button> -->
 								<aside class="filters">
 									<div class="filter-group display-block">
 										<label>Цена</label>
@@ -303,62 +424,102 @@
 										<p class="filter-title">Особенности</p>
 										<ul class="type__material-box">
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-1"
+													type="checkbox"
+													value="Smart Locks"
+												/>
 												<p class="text-of-type">Электронные кодовые замки</p>
 												<span class="grey-num">(65)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-2"
+													type="checkbox"
+													value="Biometric Locks"
+												/>
 												<p class="text-of-type">Биометрические замки</p>
 												<span class="grey-num">(15)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-3"
+													type="checkbox"
+													value="Biometric Readers"
+												/>
 												<p class="text-of-type">Замок с отппечатком</p>
 												<span class="grey-num">(28)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-4"
+													type="checkbox"
+													value="Access Control"
+												/>
 												<p class="text-of-type">Замок с бесконтактной картой</p>
 												<span class="grey-num">(45)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-5"
+													type="checkbox"
+													value="Keypad Locks"
+												/>
 												<p class="text-of-type">Программируемые замки</p>
 												<span class="grey-num">(8)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-6"
+													type="checkbox"
+													value="Hotel Locks"
+												/>
 												<p class="text-of-type">Замки на батарейках</p>
 												<span class="grey-num">(4)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-7"
+													type="checkbox"
+													value="Remote Locks"
+												/>
 												<p class="text-of-type">Замки с удаленным доступом</p>
 												<span class="grey-num">(31)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-8"
+													type="checkbox"
+													value="Wireless Locks"
+												/>
 												<p class="text-of-type">Bluetooth замки</p>
 												<span class="grey-num">(6)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-9"
+													type="checkbox"
+													value="Smart Home"
+												/>
 												<p class="text-of-type">
 													Электронные замки для квартиры
 												</p>
 												<span class="grey-num">(17)</span>
 											</li>
 											<li class="type-of__item">
-												<input type="checkbox" />
+												<input
+													class="checkbox-10"
+													type="checkbox"
+													value="Cylinders"
+												/>
 												<p class="text-of-type">Замки для стеклянных дверей</p>
 												<span class="grey-num">(24)</span>
 											</li>
-											<li class="type-of__item">
-												<input type="checkbox" />
+											<!-- <li class="type-of__item">
+												<input class="checkbox-11" type="checkbox" />
 												<p class="text-of-type">Электронные цилиндры</p>
 												<span class="grey-num">(3)</span>
-											</li>
+											</li> -->
 										</ul>
 									</div>
 									<!-- <hr class="filter-border" /> -->
