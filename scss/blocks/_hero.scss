@@ -531,8 +531,38 @@
 }
 
 @media only screen and (max-width: 365px) {
-  .part__subtitle{
+  .part__subtitle {
     width: 255px;
   }
 }
 
+.accordion-header {
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.accordion-header::after {
+  content: "▼";
+  font-size: 12px;
+  transition: transform 0.3s;
+}
+
+.accordion-header.active::after {
+  transform: rotate(180deg);
+}
+
+.accordion-content {
+  display: none;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-left: 2px solid #ccc;
+}
+
+.accordion-content.show {
+  display: block;
+}
