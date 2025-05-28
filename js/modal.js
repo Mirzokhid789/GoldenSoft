@@ -1,6 +1,15 @@
 let openmodal = document.querySelector('.korzina')
 let modalsWrapper = document.querySelector('.cart-container')
 let closemodal = document.querySelector('.closest-btn')
+let product_xcontainer = document.querySelector('.product-container')
+let hero_second_btn = document.querySelector('.hero_second_btn')
+
+hero_second_btn.addEventListener('click', () => {
+	localStorage.setItem('card', 'true')
+
+	if (condition) {
+	}
+})
 
 console.log(closemodal)
 
@@ -11,7 +20,6 @@ openmodal.addEventListener('click', () => {
 closemodal.addEventListener('click', () => {
 	modalsWrapper.classList.remove('shows_modal')
 })
-  
 
 const minusBtn = document.querySelector('.minusBtn')
 const plusBtn = document.querySelector('.plusBtn')
