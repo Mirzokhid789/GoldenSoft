@@ -121,3 +121,21 @@ let showBtn = document
 		evt.preventDefault()
 		window.location.href = `catalog.html`
 	})
+
+const resetFiltersBtn = document.querySelector('.reset-filters-btn')
+
+resetFiltersBtn.addEventListener('click', () => {
+	// Uncheck all checkboxes
+	document
+		.querySelectorAll('input[name="feature"]')
+		.forEach((cb) => (cb.checked = false))
+
+	// Reset price range
+	document.getElementById('price-min').value = 0
+	document.getElementById('price-max').value = 25000
+
+	// Display all products
+	displayProducts(products)
+
+	// Optional: close the filter panel
+})
