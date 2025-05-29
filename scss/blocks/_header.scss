@@ -23,9 +23,9 @@
 	display: none;
 }
 
-// .header__burger--list {
-// 	display: none;
-// }
+.header__burger--list {
+	display: none;
+}
 
 .ul-li_title {
 	color: #454f5b;
@@ -46,11 +46,12 @@
 .katalog {
 	color: #454f5b;
 }
-// .phonega{
-//   margin-top: 340px;
-//   display: flex;
-//   gap: 25px;
-// }
+.phonega {
+	margin-top: 340px;
+	display: flex;
+	gap: 25px;
+	z-index: 1000;
+}
 
 .tepa {
 	display: flex;
@@ -122,6 +123,10 @@
 	.header__logo {
 		display: none;
 	}
+
+	.nom__ul-li {
+		z-index: 1000;
+	}
 }
 
 details {
@@ -154,9 +159,9 @@ details[open] summary::after {
 }
 
 // p {
-// 	padding: 10px;
-// 	margin: 0;
-// 	background-color: #f9f9f9;
-// 	border: 1px solid #ccc;
-// 	border-top: none;
+//   padding: 10px;
+//   margin: 0;
+//   background-color: #f9f9f9;
+//   border: 1px solid #ccc;
+//   border-top: none;
 // }

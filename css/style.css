@@ -49,6 +49,10 @@ a {
   display: none;
 }
 
+.header__burger--list {
+  display: none;
+}
+
 .ul-li_title {
   color: #454f5b;
 }
@@ -67,6 +71,13 @@ a {
 
 .katalog {
   color: #454f5b;
+}
+
+.phonega {
+  margin-top: 340px;
+  display: flex;
+  gap: 25px;
+  z-index: 1000;
 }
 
 .tepa {
@@ -134,6 +145,9 @@ a {
   }
   .header__logo {
     display: none;
+  }
+  .nom__ul-li {
+    z-index: 1000;
   }
 }
 details {
