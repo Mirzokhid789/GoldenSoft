@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css"
+		/>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="container">
+				<div class="header__wrapper">
+					<div class="header__burger"><i class="bi bi-list" id="menu"></i></div>
+					<div class="header__burger--list">
+						<ul class="nom__ul nommla">
+							<li class="nom__ul-li">
+								<h3 class="ul-li_title">
+									<a class="glavny" href="./index.html"
+										>Главная<i class="bi bi-arrow-right"></i
+									></a>
+								</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_titlee ">
+									<a class="katalog" href="./catalog.html">Каталог </a>
+								</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_title">
+									<a class="ul-li_title" href="./wholesale.html"
+										>Оптовая продажа</a
+									>
+								</h3>
+								<hr class="hrlar" />
+								<h3 class="ul-li_title">
+									<a class="ul-li_title" href="./about.html">О нас</a>
+								</h3>
+								<hr class="hrlar" />
+							</li>
+						</ul>
+					</div>
+					<div class="tepa">
+						<img src="./assets/Logo.svg" alt="" class="header__logo" />
+						<ul class="header__list">
+							<li class="header__list-item">
+								<a href="/index.html" class="list-item__link">Главная</a>
+								<a href="/catalog.html" class="list-item__link catalog"
+									>Каталог<i class="bi bi-arrow-down-short"></i
+								></a>
+								<a href="" class="list-item__link">Оптовая продажа</a>
+								<a href="" class="list-item__link">О нас</a>
+							</li>
+						</ul>
+					</div>
+					<ul class="header__list2">
+						<li class="header__list2-item">
+							<a href="" class="header__link"
+								><i class="bi bi-telephone"></i>+7 (966) 55 88 499</a
+							>
+							<div class="header__oxrgisi">
+								<div class="headerdiki"><i class="bi bi-heart"></i></div>
+								<div class="headerdiki"><i class="bi bi-cart-dash"></i></div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</header>
+		<hr />
+
+		<main class="main">
+			<section class="section whole-section1">
+				<div class="container">
+					<div class="whole1-section">
+						<div class="whole1-left">
+							<h1 class="whole1-title">Оформите заявку и мы вам перезвоним</h1>
+							<p class="whole1-hidden-title">
+								Мы поможем Вам просчитать стоимость
+							</p>
+							<p class="whole1-info">
+								Vitae, urna, massa dictumst morbi ut id dui nulla. Purus a velit
+								sem viverra. Nunc ac quis donec nunc eu blandit ante nibh. Sit
+								felis nulla donec mauris quis nulla velit.
+							</p>
+						</div>
+						<div class="whole1-right">
+							<div class="wh1-right-box">
+								<p class="whole-right-title">Оформление заявки</p>
+								<div class="right1-inputs">
+									<div class="input-box">
+										<label for="name">Имя</label>
+										<input placeholder="Ваше имя" type="text" />
+									</div>
+									<div class="input-box">
+										<label for="company">Название компании </label>
+										<input placeholder="Имя Вашей компании" type="text" />
+									</div>
+									<div class="input-box">
+										<label for="phone">Номер телефона</label>
+										<input
+											placeholder="+7 (_ _ _) _ _  _ _  _ _ _"
+											type="number"
+										/>
+									</div>
+									<div class="input-box">
+										<label for="product"
+											>Название товара <i class="bi bi-search"></i
+										></label>
+										<input
+											class="long"
+											placeholder="Введите название или артикул товара"
+											type="text"
+										/>
+									</div>
+									<div class="input-box">
+										<label for="name">Количество </label>
+										<input placeholder="Количество товара" type="text" />
+									</div>
+								</div>
+								<div class="right1-checkboxes">
+									<div class="right1-check1">
+										<input type="checkbox" name="logo" id="" />
+										<label for="logo"
+											>Нанесение персонального логотипа (бесплатно)</label
+										>
+									</div>
+									<div class="right1-check1">
+										<input type="checkbox" name="help" id="" />
+										<label for="help"
+											>Помощь в монтажных работах (бесплатно)</label
+										>
+									</div>
+								</div>
+								<div class="right1-send">
+									<p class="send-price-text">Приблизительная стоимость</p>
+									<button class="send-text-btn">Отправить заявку</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+		<script src="./js/catolog.js"></script>
+				<script src="./js/header.js"></script>
+	</body>
+</html>

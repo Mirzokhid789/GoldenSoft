@@ -18,13 +18,17 @@
             <div class="header__burger"><i class="bi bi-list"></i></div>
             <img src="./assets/Logo.svg" alt="" class="header__logo" />
             <ul class="header__list">
-              <li class="header__list-item">
-                <a href="" class="list-item__link">Главная</a>
-                <a href="./pages/catalog.html" class="list-item__link"
+              <li class="header__list-item header__burger--list">
+                <a href="./index.html" class="list-item__link glav">Главная</a>
+                <a
+                  href="./catalog.html"
+                  class="list-item__link catalog ul-li_title"
                   >Каталог<i class="bi bi-arrow-down-short"></i
                 ></a>
-                <a href="" class="list-item__link">Оптовая продажа</a>
-                <a href="" class="list-item__link">О нас</a>
+                <a href="./finally.html" class="list-item__link thirdnav"
+                  >Оптовая продажа</a
+                >
+                <a href="./about.html" class="list-item__link nav4th">О нас</a>
               </li>
             </ul>
           </div>
@@ -46,6 +50,7 @@
       </div>
     </header>
     <hr />
+
     <section>
       <div class="container">
         <div class="cart-container">
@@ -99,91 +104,83 @@
               <button class="btn-secondary">Продолжить покупки</button>
             </div>
 
-            <div class="recommendations">
-              <h3 class="rec-title">С этим покупают</h3>
-
-              <div class="rec-item">
-                <div class="rec-image">
-                  <img src="./assets/Rectangle 792.svg" alt="" />
-                </div>
-                <div class="rec-details">
-                  <div class="rec-name">
-                    Дверной Замок Golden Soft для офиса
-                  </div>
-                  <div class="rec-rating">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star empty">★</span>
-                    <span class="star empty">★</span>
-                    <span class="rec-reviews">(12) отзывов</span>
-                  </div>
-                  <div class="rec-price">
-                    <span class="price-current">9 000₽</span>
-                    <span class="price-old">12000₽</span>
-                  </div>
-                </div>
-                <p class="add-text">+ Добавить</p>
+            <!-- <div class="rec-item">
+              <div class="rec-image">
+                <img src="./assets/Rectangle 792.svg" alt="" />
               </div>
-
-              <div class="rec-item">
-                <div class="rec-image">
-                  <img src="./assets/Rectangle 792.svg" alt="" />
+              <div class="rec-details">
+                <div class="rec-name">Дверной Замок Golden Soft для офиса</div>
+                <div class="rec-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star empty">★</span>
+                  <span class="star empty">★</span>
+                  <span class="rec-reviews">(12) отзывов</span>
                 </div>
-                <div class="rec-details">
-                  <div class="rec-name">
-                    Дверной Замок Golden Soft для офиса
-                  </div>
-                  <div class="rec-rating">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star empty">★</span>
-                    <span class="rec-reviews">(12) отзывов</span>
-                  </div>
-                  <div class="rec-price">
-                    <span class="price-current">9 000₽</span>
-                    <span class="price-old">12 000₽</span>
-                  </div>
+                <div class="rec-price">
+                  <span class="price-current">9 000₽</span>
+                  <span class="price-old">12000₽</span>
                 </div>
-                <p class="add-text">+ Добавить</p>
               </div>
-
-              <div class="rec-item">
-                <div class="rec-image">
-                  <img src="./assets/Rectangle 792.svg" alt="" />
-                </div>
-                <div class="rec-details">
-                  <div class="rec-name">
-                    Дверной Замок Golden Soft для офиса
-                  </div>
-                  <div class="rec-rating">
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star">★</span>
-                    <span class="star empty">★</span>
-                    <span class="star empty">★</span>
-                    <span class="rec-reviews">(12) отзывов</span>
-                  </div>
-                  <div class="rec-price">
-                    <span class="price-current">9 000₽</span>
-                    <span class="price-old">10000₽</span>
-                  </div>
-                </div>
-                <p class="add-text">+ Добавить</p>
-              </div>
+              <p class="add-text">+ Добавить</p>
             </div>
+
+            <div class="rec-item">
+              <div class="rec-image">
+                <img src="./assets/Rectangle 792.svg" alt="" />
+              </div>
+              <div class="rec-details">
+                <div class="rec-name">Дверной Замок Golden Soft для офиса</div>
+                <div class="rec-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star empty">★</span>
+                  <span class="rec-reviews">(12) отзывов</span>
+                </div>
+                <div class="rec-price">
+                  <span class="price-current">9 000₽</span>
+                  <span class="price-old">12 000₽</span>
+                </div>
+              </div>
+              <p class="add-text">+ Добавить</p>
+            </div>
+
+            <div class="rec-item">
+              <div class="rec-image">
+                <img src="./assets/Rectangle 792.svg" alt="" />
+              </div>
+              <div class="rec-details">
+                <div class="rec-name">Дверной Замок Golden Soft для офиса</div>
+                <div class="rec-rating">
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star">★</span>
+                  <span class="star empty">★</span>
+                  <span class="star empty">★</span>
+                  <span class="rec-reviews">(12) отзывов</span>
+                </div>
+                <div class="rec-price">
+                  <span class="price-current">9 000₽</span>
+                  <span class="price-old">10000₽</span>
+                </div>
+              </div>
+              <p class="add-text">+ Добавить</p>
+            </div> -->
           </div>
         </div>
       </div>
     </section>
+
     <main>
       <section class="hero">
         <div class="container">
           <div class="product-container">
             <div class="product-image">
-              <img class="hero__img"
+              <img
+                class="hero__img"
                 src="./assets/Rectangle 6.svg"
                 alt="Golden Soft GS-200Z-5 электронный замок"
               />
@@ -271,7 +268,7 @@
           <p class="categoriy_text">Категории</p>
 
           <div class="categories">
-            <div  class="card">
+            <div class="card">
               <div id="1" class="image">
                 <img
                   src="./assets/фото.svg"
@@ -282,7 +279,7 @@
               <button href="#" class="btn">Перейти</button>
             </div>
 
-            <div  class="card">
+            <div class="card">
               <div id="2" class="image">
                 <img src="./assets/lock 2.svg" alt="Замок для шкафчиков" />
               </div>
@@ -291,14 +288,14 @@
             </div>
 
             <div class="card">
-              <div  id="3" class="image">
+              <div id="3" class="image">
                 <img src="./assets/lock 3.svg" alt="Замок для офисов" />
               </div>
               <p class="categoriy_text2">Для офисов</p>
               <button href="#" class="btn">Перейти</button>
             </div>
 
-            <div  class="card">
+            <div class="card">
               <div id="4" class="image">
                 <img src="./assets/lock 4.svg" alt="Замки для дома" />
               </div>
@@ -308,9 +305,13 @@
           </div>
           <div class="buttons_second-wrapper">
             <button class="wrapper__third_button">
-              <a class="third_button-a" href="/pages/catalog2.html"
-                >Все категории</a
+              <a
+                class="third_button-a"
+                href="./catalog2.html
+              "
               >
+                Все категории
+              </a>
             </button>
           </div>
         </div>

@@ -4,12 +4,12 @@ let closemodal = document.querySelector(".closest-btn");
 let product_xcontainer = document.querySelector(".product-container");
 let hero_second_btn = document.querySelector(".hero_second_btn");
 
-hero_second_btn.addEventListener("click", () => {
-  localStorage.setItem("card", "true");
+// hero_second_btn.addEventListener("click", () => {
+//   localStorage.setItem("card", "true");
 
-  if (condition) {
-  }
-});
+//   if (condition) {
+//   }
+// });
 
 openmodal.addEventListener("click", () => {
   modalsWrapper.classList.add("shows_modal");
@@ -18,8 +18,6 @@ openmodal.addEventListener("click", () => {
 closemodal.addEventListener("click", () => {
   modalsWrapper.classList.remove("shows_modal");
 });
-
-//_______________________________________________________________________________________________
 
 const minusBtn = document.querySelector(".minusBtn");
 const plusBtn = document.querySelector(".plusBtn");
