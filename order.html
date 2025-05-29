@@ -56,6 +56,7 @@
 								<div>
 									<label for="surname">Фамилия</label>
 									<input
+										required
 										placeholder="Зайцев"
 										type="text"
 										name="surname"
@@ -64,7 +65,13 @@
 								</div>
 								<div>
 									<label for="name">Имя</label>
-									<input placeholder="Михаил" type="text" name="name" id="" />
+									<input
+										required
+										placeholder="Михаил"
+										type="text"
+										name="name"
+										id=""
+									/>
 								</div>
 								<div>
 									<label for="phone">Телефон</label>
@@ -78,6 +85,7 @@
 								<div>
 									<label for="mail">E-mail</label>
 									<input
+										required
 										placeholder="example@mail.ru"
 										type="email"
 										name="mail"
@@ -106,11 +114,11 @@
 								<p class="l1-title">3. Оплата</p>
 								<div class="pay-method-box">
 									<div>
-										<input type="radio" name="pay-method" id="" />
+										<input required type="radio" name="pay-method" id="" />
 										<label for="pay-method">Оплата при получении товара</label>
 									</div>
 									<div>
-										<input type="radio" name="pay-method" id="" />
+										<input required type="radio" name="pay-method" id="" />
 										<label for="pay-method">Банковская карта</label>
 									</div>
 								</div>
@@ -182,7 +190,10 @@
 						</div>
 						<hr />
 						<div class="accept-order-box">
-							<button class="accept-order-btn">Подтвердить заказ</button>
+							<button type="submit" class="accept-order-btn" disabled>
+								Подтвердить заказ
+							</button>
+
 							<div class="promocode">
 								<p class="prom-title">Промокод</p>
 								<a href="#" class="prom-add">Добавить</a>
@@ -204,5 +215,6 @@
 			</div>
 		</section>
 		<script src="./js/header.js"></script>
+		<script src="./js/order.js"></script>
 	</body>
 </html>

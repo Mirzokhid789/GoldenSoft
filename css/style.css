@@ -1934,6 +1934,27 @@ details[open] summary::after {
     margin-top: 16px;
   }
 }
+.accept-order-btn {
+  background-color: #cccccc; /* grey when disabled */
+  cursor: not-allowed;
+  transition: background-color 0.3s;
+}
+
+.accept-order-btn:enabled {
+  background-color: #4295e4; /* active color */
+  cursor: pointer;
+  color: white;
+}
+
+#order-message {
+  opacity: 0;
+  transition: opacity 0.5s ease-in;
+}
+
+#order-message.show {
+  opacity: 1;
+}
+
 .whole1-section {
   display: flex;
   width: 100%;
