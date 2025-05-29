@@ -148,24 +148,27 @@
   padding: 40px;
 }
 
-.section1__title{
-  color: #161C24;
+.section1__title {
+  color: #161c24;
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
   margin-bottom: 16px;
 }
-.section1__text{
-  color: #454F5B;
+.section1__text {
+  color: #454f5b;
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
 }
 
 @media (max-width: 680px) {
-  .section1__wrapper{
+  .section1__wrapper {
     flex-wrap: wrap;
-    place-items : center;
+    place-items: center;
   }
 }
 
+.bi-three-dots-vertical {
+  display: none;
+}

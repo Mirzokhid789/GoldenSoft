@@ -1153,7 +1153,7 @@ details[open] summary::after {
 }
 
 .section1__title {
-  color: #161C24;
+  color: #161c24;
   font-weight: 600;
   font-size: 32px;
   line-height: 38px;
@@ -1161,7 +1161,7 @@ details[open] summary::after {
 }
 
 .section1__text {
-  color: #454F5B;
+  color: #454f5b;
   font-weight: 600;
   font-size: 16px;
   line-height: 26px;
@@ -1173,6 +1173,10 @@ details[open] summary::after {
     place-items: center;
   }
 }
+.bi-three-dots-vertical {
+  display: none;
+}
+
 .razmerlar__wrapper {
   margin-top: 40px;
 }
@@ -4420,6 +4424,7 @@ textarea {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  padding: 40px;
 }
 
 .shows_modal {
