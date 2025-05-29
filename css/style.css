@@ -49,10 +49,6 @@ a {
   display: none;
 }
 
-.header__burger--list {
-  display: none;
-}
-
 .ul-li_title {
   color: #454f5b;
 }
@@ -167,14 +163,6 @@ summary::after {
 /* Ochilganda aylansin */
 details[open] summary::after {
   transform: rotate(180deg);
-}
-
-p {
-  padding: 10px;
-  margin: 0;
-  background-color: #f9f9f9;
-  border: 1px solid #ccc;
-  border-top: none;
 }
 
 .hero_title {
@@ -1566,6 +1554,11 @@ p {
   flex-direction: column;
 }
 
+.l3-info-box div {
+  display: flex;
+  gap: 10 px;
+}
+
 .l2-option-box {
   display: flex;
   flex-direction: column;
@@ -1577,6 +1570,10 @@ p {
   font-size: 14px;
   line-height: 24px;
   color: #454f5b;
+}
+.l2-option-box div {
+  display: flex;
+  gap: 10px;
 }
 
 .pay-method-box {
@@ -4735,4 +4732,8 @@ textarea {
 }
 .bi-three-dots-vertical {
   display: none;
+}
+
+a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

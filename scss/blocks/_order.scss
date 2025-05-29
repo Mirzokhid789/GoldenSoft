@@ -60,6 +60,13 @@
 	}
 }
 
+.l3-info-box{
+	div{
+		display: flex;
+		gap: 10	px;
+	}
+}
+
 .l2-option-box {
 	display: flex;
 	flex-direction: column;
@@ -70,6 +77,11 @@
 		font-size: 14px;
 		line-height: 24px;
 		color: $grey;
+	}
+
+	div {
+		display: flex;
+		gap: 10px;
 	}
 }
 
@@ -340,9 +352,9 @@
 		border: 1px solid transparent;
 	}
 
-    .order-section{
-        margin-right: 32px;
-    }
+	.order-section {
+		margin-right: 32px;
+	}
 
 	.l1-info-box {
 		input {
@@ -388,7 +400,7 @@
 		position: absolute;
 		top: 1088px;
 		left: 32px;
-        display: none;
+		display: none;
 	}
 
 	.num-of-item {
@@ -443,9 +455,8 @@
 		margin: 24px 16px;
 	}
 
-    .promocode{
-        gap: 164px;
-        margin-top: 16px;
-    }
-
+	.promocode {
+		gap: 164px;
+		margin-top: 16px;
+	}
 }
